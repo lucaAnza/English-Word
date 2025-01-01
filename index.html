@@ -1,100 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <style>
-        /* General Styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
+  <meta charset="UTF-8" />
+  <title>English World</title>
+  <style>
+    /* Basic reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-        }
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #a8c0ff, #3f2b96);
+      background-attachment: fixed;
+      padding: 30px;
+      color: #333;
+    }
 
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
+    h2 {
+      text-align: center;
+      color: #fff;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
 
-        nav {
-            margin-top: 10px;
-        }
+    .day-section {
+      background-color: rgba(255, 255, 255, 0.7);
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 900px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-            font-size: 1.2rem;
-        }
+    .day-title {
+      font-size: 1.4rem;
+      margin-bottom: 15px;
+      color: #222;
+      text-transform: uppercase;
+      border-bottom: 2px solid #ccc;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
 
-        nav a:hover {
-            text-decoration: underline;
-        }
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: flex-start;
+      margin-top: 10px;
+    }
 
-        main {
-            padding: 2rem;
-            text-align: center;
-        }
+    .card {
+      width: 120px;
+      height: 160px;
+      background: #ffffff;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      position: relative;
+      perspective: 1000px; /* For 3D flip effect */
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
 
-        main h2 {
-            color: #4CAF50;
-        }
+    /* Subtle hover scale */
+    .card:hover {
+      transform: scale(1.03);
+    }
 
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 1rem;
-            color: white;
-            background-color: #4CAF50;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-        }
+    .card-content {
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      backface-visibility: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.6s;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 10px;
+    }
 
-        .button:hover {
-            background-color: #45a049;
-        }
+    .front {
+      background: #fdfdfd;
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #333;
+    }
 
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    .back {
+      transform: rotateY(180deg);
+      background: #f8f8f8;
+      font-size: 0.9rem;
+      color: #444;
+    }
+
+    .flipped .front {
+      transform: rotateY(180deg);
+    }
+
+    .flipped .back {
+      transform: rotateY(0deg);
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Website By Luke</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+  <h2> English world 🇬🇧 🏴󠁧󠁢󠁥󠁮󠁧󠁿 🇺🇸 (site made by Luke :) </h2>
 
-    <main>
-        <h2>Your One-Stop Solution</h2>
-        <p>Discover our amazing services and get started today!</p>
-        <a href="#services" class="button">Learn More</a>
-    </main>
+  <!-- Container for Day Sections -->
+  <div id="days-container"></div>
 
-    <footer>
-        <p>&copy; 2024 My Website | All Rights Reserved</p>
-    </footer>
+  <script>
+    /**
+     * Data structure:
+     * Each element of the 'daysData' array represents one "Day",
+     * containing a label and an array of (word -> translation).
+     * You can add as many days and words as you like.
+     */
+
+    /*--------------------------- BEGINS OF DATA STRUCTURE ------------------------------------- */
+    
+    const daysData = [
+      {
+        dayLabel: "Day 1",
+        words: [
+          { word: "Exempted",     translation: "Freed from an obligation or liability. 🇮🇹 Esonerato" },
+          { word: "Humble",       translation: "Having or showing a modest or low view of one's importance. 🇮🇹 Umile" },
+          { word: "Mantelpiece",  translation: "A structure around a fireplace, often including a shelf above it. 🇮🇹 Mensola del camino" },
+          { word: "Banister",     translation: "The handrail and supporting posts along the side of a staircase. 🇮🇹 Balaustra" },
+          { word: "Hailstorm",    translation: "A storm during which hail (ice pellets) fall. 🇮🇹 Tempesta di grandine" },
+          { word: "Drought",      translation: "A prolonged period of abnormally low rainfall. 🇮🇹 Siccità" },
+          { word: "Tributary",    translation: "A river or stream flowing into a larger river or lake. 🇮🇹 Affluente" },
+          { word: "Lightning",    translation: "A natural electrical discharge of high voltage. 🇮🇹 Fulmine" },
+          { word: "Turn up",      translation: "(phrasal verb) To arrive or appear suddenly. 🇮🇹 Presentarsi" },
+          { word: "Look after",   translation: "(phrasal verb) To take care of someone or something. 🇮🇹 Badare a" }
+        ]
+      },
+      {
+        dayLabel: "Day 2",
+        words: [
+          { word: "Keep up with",  translation: "(phrasal verb) To move or progress at the same rate. 🇮🇹 Tenere il passo con" },
+          { word: "Catch on",      translation: "(phrasal verb) To understand or to become popular. 🇮🇹 Capire / Diventare popolare" },
+          { word: "Get rid of",    translation: "(phrasal verb) To remove or discard something unwanted. 🇮🇹 Sbarazzarsi di" },
+          { word: "Miss out on",   translation: "(phrasal verb) To fail to benefit from or enjoy something. 🇮🇹 Perdersi qualcosa" },
+          { word: "Techie",        translation: "(noun) A person very knowledgeable about technology. 🇮🇹 Appassionato di tecnologia" },
+          { word: "House",         translation: "(verb) To provide shelter or accommodation for someone. 🇮🇹 Ospitare / Alloggiare" },
+          { word: "Nest / To nest",translation: "(noun, verb) A bird’s structure; to build or occupy a nest. 🇮🇹 Nido / Nidificare" },
+          { word: "Plaster",       translation: "(noun) A paste for coating walls or covering wounds. 🇮🇹 Intonaco / Cerotto" },
+          { word: "Slimy",         translation: "(adjective) Having a slippery or viscous texture. 🇮🇹 Viscido" }
+        ]
+      },
+      {
+        dayLabel: "Day 3",
+        words: [
+          { word: "Rug",             translation: "(noun) A piece of thick fabric that covers part of a floor. 🇮🇹 Tappeto" },
+          { word: "Howl",            translation: "(verb) To make a long, loud, mournful sound, like a wolf. 🇮🇹 Ululare" },
+          { word: "Demure",          translation: "(adjective) Reserved, modest, and shy. 🇮🇹 Modesto" },
+          { word: "Flabbergasted",   translation: "(adjective) Overwhelmed by surprise or shock. 🇮🇹 Sbalordito" },
+          { word: "Delightful",      translation: "(adjective) Very pleasant or charming. 🇮🇹 Delizioso" },
+          { word: "It's raining cats and dogs", 
+            translation: "(idiom) It's raining very heavily. 🇮🇹 Sta piovendo a dirotto" 
+          },
+          { word: "Halt",            translation: "(noun, verb) A temporary stop; to stop moving. 🇮🇹 Arresto / Fermarsi" },
+          { word: "Stain",           translation: "(noun) A mark or discoloration not easily removed. 🇮🇹 Macchia" },
+          { word: "Whisper",         translation: "(verb) To speak softly using breath without vocal cords. 🇮🇹 Sussurrare" },
+          { word: "Glimbse",         translation: "(noun, verb) A brief look; to see partially. 🇮🇹 Occhiata / Intravedere" }
+        ]
+      },
+      {
+      dayLabel: "Day 4",
+      words: [
+        { word: "Pouring / To Pour",  translation: "(verb) Causing liquid to flow from a container in a steady stream. 🇮🇹 Versare" },
+        { word: "Seeing Red",         translation: "(idiom) Becoming extremely angry. 🇮🇹 Andare su tutte le furie" },
+        { word: "Driven",             translation: "(adjective) Motivated or determined to achieve something. 🇮🇹 Determinato" },
+        { word: "Tell off",           translation: "(phrasal verb) To reprimand someone angrily or sharply. 🇮🇹 Sgridare" },
+        { word: "Towel",              translation: "(noun) A piece of thick cloth used for drying. 🇮🇹 Asciugamano" },
+        { word: "Dishcloth",          translation: "(noun) A cloth used for washing or drying dishes. 🇮🇹 Strofinaccio" },
+        { word: "Karabiner",          translation: "(noun) A metal loop with a sprung gate, used in climbing. 🇮🇹 Moschettone" },
+        { word: "Hermit crab",        translation: "(noun) A crab that lives in a discarded shell. 🇮🇹 Paguro" },
+        { word: "Skeptical",          translation: "(noun) A state of doubt or disbelief; often 'skepticism'. 🇮🇹 Scetticismo" },
+        { word: "Word-of-mouth",      translation: "(noun) Information spread by verbal communication. 🇮🇹 Passaparola" }
+      ]
+      },
+      {
+        dayLabel: "Day 5",
+        words: [
+          { word: "Hitchhike",          translation: "(verb) To travel by asking for free rides from passing vehicles. 🇮🇹 Fare l'autostop" },
+          { word: "Annealing",          translation: "(noun) Heating and cooling metal/glass to remove stress. 🇮🇹 Ricottura" },
+          { word: "Drawbacks",          translation: "(noun) Disadvantages or negative aspects. 🇮🇹 Svantaggi" },
+          { word: "Offspring",          translation: "(noun) Children or young of a person, animal, or plant. 🇮🇹 Progenie / Discendenza" },
+          { word: "Hurry / Hurried",    translation: "(verb/adjective) To move with haste; done quickly. 🇮🇹 Sbrigarsi / Affrettato" },
+          { word: "Hue",                translation: "(noun) A color or shade. 🇮🇹 Tonalità" },
+          { word: "Whiskers",           translation: "(noun) Long facial hairs on certain animals (e.g., cats). 🇮🇹 Baffi (di animale)" },
+          { word: "Outlier",            translation: "(noun) A data point differing significantly from others. 🇮🇹 Valore anomalo" },
+          { word: "Whooped",            translation: "(verb) Made a loud cry of joy or excitement. 🇮🇹 Esultato" },
+          { word: "Spanked",            translation: "(verb) Slapped or hit, often on the buttocks. 🇮🇹 Sculacciato" }
+        ]
+      },
+      {
+        dayLabel: "Day 6",
+        words: [
+          { word: "Glad",                            translation: "(adjective) Feeling pleased or happy about something. 🇮🇹 Felice" },
+          { word: "Commute",                         translation: "(noun, verb) A regular trip between home and work; to travel regularly. 🇮🇹 Tragitto / Fare il pendolare" },
+          { word: "Shipwrecked person / Castaway",   translation: "(noun) Someone stranded after a shipwreck. 🇮🇹 Naufrago" },
+          { word: "To cast",                         translation: "(verb) To throw something or assign roles in a play/film. 🇮🇹 Lanciare / Assegnare" },
+          { word: "Looming",                         translation: "(adjective) Appearing large and threatening. 🇮🇹 Incombente" },
+          { word: "To report",                       translation: "(verb) To give a spoken or written account of something. 🇮🇹 Riferire / Segnalare" },
+          { word: "Haggling",                        translation: "(noun) The act of bargaining over a price or terms. 🇮🇹 Contrattazione" },
+          { word: "Rough",                           translation: "(adjective) Having an uneven surface; harsh or difficult. 🇮🇹 Ruvido / Difficile" },
+          { word: "Tissue",                          translation: "(noun) A piece of soft, thin paper used for wiping. 🇮🇹 Fazzolettino" },
+          { word: "Put your feet up",                translation: "(phrase) To relax, often by resting with feet raised. 🇮🇹 Rilassarsi (mettere i piedi in alto)" },
+          { word: "Snag",                            translation: "(noun) An unexpected or hidden obstacle/problem. 🇮🇹 Intoppo" },
+          { word: "Quirk",                           translation: "(noun) A peculiar aspect of someone's behavior or character. 🇮🇹 Stranezza" }
+        ]
+      },
+      {
+        dayLabel: "Day 7",
+        words: [
+          { word: "Huggle",        translation: "(noun, verb) A blend of hugging and cuddling; to embrace snugly. 🇮🇹 Coccola / Coccolare" },
+          { word: "Hook",          translation: "(noun, verb) A curved tool for catching or hanging; to fasten. 🇮🇹 Gancio / Agganciare" },
+          { word: "Nun",           translation: "(noun) A member of a religious community of women under vows. 🇮🇹 Suora" },
+          { word: "Couch",         translation: "(noun) A piece of furniture to sit or lie on. 🇮🇹 Divano" },
+          { word: "To chaise",     translation: "(verb) Possibly to chase; to follow or run after someone. 🇮🇹 Inseguire" },
+          { word: "Bonfire",       translation: "(noun) A large open-air fire used for celebration. 🇮🇹 Falò" },
+          { word: "Harmful / Harm",translation: "(adjective, noun) Capable of causing damage; injury. 🇮🇹 Dannoso / Danno" },
+          { word: "To stir",       translation: "(verb) To mix a substance or to provoke an emotion. 🇮🇹 Mescolare / Suscitare" },
+          { word: "Stool",         translation: "(noun) A seat without a back or arms. 🇮🇹 Sgabello" },
+          { word: "Maple",         translation: "(noun) A tree known for its sap and distinctive leaves. 🇮🇹 Acero" }
+        ]
+      },
+      {
+        dayLabel: "Day 8",
+        words: [
+          { word: "Wire up",                      translation: "(verb) To connect electrical wires or install a wiring network. 🇮🇹 Cablare / Collegare" },
+          { word: "Knock down",                   translation: "(verb) To demolish or strike to the ground. 🇮🇹 Abbattere / Buttare giù" },
+          { word: "Refurbish",                    translation: "(verb) To renovate or redecorate something. 🇮🇹 Rinnovare" },
+          { word: "Lofty",                        translation: "(adjective) Of imposing height; elevated in style or tone. 🇮🇹 Elevato / Altisonante" },
+          { word: "Stark",                        translation: "(adjective) Severe or bare in appearance. 🇮🇹 Spoglio / Crudo" },
+          { word: "Sprawling",                    translation: "(adjective) Spreading out irregularly over a large area. 🇮🇹 Disperso / Esteso" },
+          { word: "Wiring",                       translation: "(noun) A system of wires providing electricity or signals. 🇮🇹 Impianto elettrico" },
+          { word: "Heat",                         translation: "(noun) The quality of being hot; high temperature. 🇮🇹 Calore" },
+          { word: "Marble",                       translation: "(noun) A hard rock used in sculpture or construction. 🇮🇹 Marmo" },
+          { word: "Withdraw from / Drop out",     translation: "(verb) To leave or abandon an activity or commitment. 🇮🇹 Ritirarsi / Abbandonare" }
+        ]
+      }
+    ];
+
+    /*--------------------------- END OF DATA STRUCTURE ------------------------------------- */
+    
+    const daysContainer = document.getElementById('days-container');
+
+    // For each day, create a section with a title and card container
+    daysData.forEach(dayInfo => {
+      // Create the day section wrapper
+      const daySection = document.createElement('div');
+      daySection.classList.add('day-section');
+
+      // Create the day title
+      const dayTitle = document.createElement('h3');
+      dayTitle.classList.add('day-title');
+      dayTitle.textContent = dayInfo.dayLabel;
+
+      // Create the card container
+      const cardContainer = document.createElement('div');
+      cardContainer.classList.add('card-container');
+
+      // For each word in the current day, create a flipping card
+      dayInfo.words.forEach(({ word, translation }) => {
+        const card = document.createElement('div');
+        card.classList.add('card');
+
+        // Front side
+        const front = document.createElement('div');
+        front.classList.add('card-content', 'front');
+        front.textContent = word;
+
+        // Back side
+        const back = document.createElement('div');
+        back.classList.add('card-content', 'back');
+        back.textContent = translation;
+
+        // Append front/back to the card
+        card.appendChild(front);
+        card.appendChild(back);
+
+        // On click, flip the card
+        card.addEventListener('click', () => {
+          card.classList.toggle('flipped');
+        });
+
+        // Add the card to the card container
+        cardContainer.appendChild(card);
+      });
+
+      // Append the day title and card container to the day section
+      daySection.appendChild(dayTitle);
+      daySection.appendChild(cardContainer);
+
+      // Finally, add the day section to the main container
+      daysContainer.appendChild(daySection);
+    });
+  </script>
 </body>
 </html>
