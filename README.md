@@ -9,10 +9,11 @@ Welcome to **English World**! This website helps you learn and review English vo
   - [Features](#features)
   - [Installation](#installation)
   - [Usage](#usage)
+    - [Self-hosted](#self-hosted)
+    - [Managed hosting](#managed-hosting)
   - [Data Structure](#data-structure)
   - [Customization](#customization)
 
----
 
 ## Overview
 **English World** is a small, self-contained web project where you can:
@@ -45,11 +46,18 @@ Welcome to **English World**! This website helps you learn and review English vo
 ---
 
 ## Usage
+
+### Self-hosted
+
 1. **Open** the website (e.g., `index.html`) in your browser.
 2. **Browse** through the days. For example, you might see headings like **Day 1**, **Day 2**, etc.
 3. **Read** the words listed under each day.  
 4. *(If using flipping cards)* **Click** on a card to flip it and see the translation or definition.  
 5. **Learn** each day’s words at your own pace.
+
+### Managed hosting
+
+1. **Go** to the following link and enjoy (https://lucaanza.github.io/English-Word/) 
 
 ---
 
