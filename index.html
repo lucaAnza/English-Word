@@ -42,7 +42,9 @@
       color: #222;
       text-transform: uppercase;
       border-bottom: 2px solid #ccc;
-      display: inline-block;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; /* Align items horizontally */
       padding-bottom: 5px;
     }
 
@@ -112,13 +114,113 @@
     .flipped .back {
       transform: rotateY(0deg);
     }
+
+    /* Button styles */
+    .roll-button {
+      background-color: #3f2b96;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .roll-button:hover {
+      background-color: #6846c1;
+    }
+
+    /* Grammar section */
+    .grammar-section {
+      background-color: rgba(255, 255, 255, 0.7);
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 900px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .conditionals-section {
+      margin-bottom: 20px;
+    }
+
+    .conditionals-title {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    .conditionals-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    .conditionals-table th,
+    .conditionals-table td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .conditionals-table th {
+      background-color: #f0f0f0;
+      color: #333;
+    }
+
+    .conditionals-table td {
+      background-color: #fff;
+      color: #444;
+    }
   </style>
 </head>
 <body>
-  <h2> English world 🇬🇧 🏴󠁧󠁢󠁥󠁮󠁧󠁿 🇺🇸 (site made by Luke :) </h2>
+  <!-- Vocabulary Section -->
+  <div id="vocabulary-section">
+    <h2>English World 🇬🇧 🇺🇸 (site made by Luke :)</h2>
+    <div id="days-container"></div>
+  </div>
 
-  <!-- Container for Day Sections -->
-  <div id="days-container"></div>
+  <!-- Grammar Section -->
+  <div class="grammar-section">
+    <h2>Grammar</h2>
+
+    <!-- New Section for Conditionals Table -->
+    <div class="conditionals-section">
+      <h3 class="conditionals-title">Conditionals Table</h3>
+      <table class="conditionals-table">
+        <thead>
+          <tr>
+            <th>Tipo di Condizionale</th>
+            <th>Struttura</th>
+            <th>Esempio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Zero</td>
+            <td>If + Present Simple, Present Simple</td>
+            <td>If you heat ice, it melts.</td>
+          </tr>
+          <tr>
+            <td>First</td>
+            <td>If + Present Simple, Will + Infinitive</td>
+            <td>If I study, I will pass the test.</td>
+          </tr>
+          <tr>
+            <td>Second</td>
+            <td>If + Past Simple, Would + Infinitive</td>
+            <td>If I were rich, I would buy a house.</td>
+          </tr>
+          <tr>
+            <td>Third</td>
+            <td>If + Past Perfect, Would + Have + Past Participle</td>
+            <td>If you had told me, I would have helped.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 
   <script>
     /**
@@ -128,9 +230,7 @@
      * You can add as many days and words as you like.
      */
 
-    /*--------------------------- BEGINS OF DATA STRUCTURE ------------------------------------- */
-    
-    const daysData = [
+      const daysData = [
       {
         dayLabel: "Day 1",
         words: [
@@ -256,58 +356,60 @@
       }
     ];
 
-    /*--------------------------- END OF DATA STRUCTURE ------------------------------------- */
-    
     const daysContainer = document.getElementById('days-container');
 
-    // For each day, create a section with a title and card container
-    daysData.forEach(dayInfo => {
+    // Function to flip all cards of a specific day
+    function flipAllCards(dayIndex) {
+      const cards = document.querySelectorAll(`#days-container .day-section:nth-child(${dayIndex + 1}) .card`);
+      cards.forEach(card => {
+        card.classList.toggle('flipped');
+      });
+    }
+
+    // Iterate through daysData and create HTML structure
+    daysData.forEach((dayInfo, index) => {
       // Create the day section wrapper
       const daySection = document.createElement('div');
       daySection.classList.add('day-section');
 
-      // Create the day title
-      const dayTitle = document.createElement('h3');
+      // Create the day title with flip button
+      const dayTitle = document.createElement('div');
       dayTitle.classList.add('day-title');
-      dayTitle.textContent = dayInfo.dayLabel;
+      dayTitle.innerHTML = `<span>${dayInfo.dayLabel}</span><button class="roll-button" onclick="flipAllCards(${index})">Flip All Cards</button>`;
+      daySection.appendChild(dayTitle);
 
       // Create the card container
       const cardContainer = document.createElement('div');
       cardContainer.classList.add('card-container');
 
-      // For each word in the current day, create a flipping card
-      dayInfo.words.forEach(({ word, translation }) => {
+      // Populate cards with words
+      dayInfo.words.forEach(word => {
         const card = document.createElement('div');
         card.classList.add('card');
 
-        // Front side
+        // Front side (word)
         const front = document.createElement('div');
         front.classList.add('card-content', 'front');
-        front.textContent = word;
+        front.textContent = word.word;
+        card.appendChild(front);
 
-        // Back side
+        // Back side (translation)
         const back = document.createElement('div');
         back.classList.add('card-content', 'back');
-        back.textContent = translation;
-
-        // Append front/back to the card
-        card.appendChild(front);
+        back.textContent = word.translation;
         card.appendChild(back);
 
-        // On click, flip the card
+        // Append card to container
         card.addEventListener('click', () => {
           card.classList.toggle('flipped');
         });
-
-        // Add the card to the card container
         cardContainer.appendChild(card);
       });
 
-      // Append the day title and card container to the day section
-      daySection.appendChild(dayTitle);
+      // Append card container to day section
       daySection.appendChild(cardContainer);
 
-      // Finally, add the day section to the main container
+      // Append day section to main container
       daysContainer.appendChild(daySection);
     });
   </script>
