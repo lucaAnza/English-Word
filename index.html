@@ -172,15 +172,67 @@
       background-color: #fff;
       color: #444;
     }
+
+    /* Point counter */
+    .counter {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      justify-content: center; 
+      margin-top: 20px; 
+    }
+    .counter-column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .label {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: #6d4508;
+    }
+    .digit {
+      width: 60px;
+      height: 80px;
+      font-size: 3rem;
+      background: linear-gradient(#005f4b, #3f2b96);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+      perspective: 1000px;
+      transition: transform 0.3s;
+    }
+    .flip {
+      transform: rotateX(180deg);
+    }
   </style>
 </head>
 <body>
+
+
+  <h2>English World 🇬🇧 🇺🇸 (site made by Luke :)</h2>
+
   <!-- Vocabulary Section -->
   <div id="vocabulary-section">
-    <h2>English World 🇬🇧 🇺🇸 (site made by Luke :)</h2>
+    <!-- Point counter -->
+    <div class="counter">
+      <div class="counter-column">
+        <span class="label">P1 🎮 </span>
+        <div onclick="increment('p1')" class="digit" id="p1">0</div>
+      </div>
+      <div class="counter-column">
+        <span class="label">P2 🎮</span>
+        <div onclick="increment('p2')" class="digit" id="p2">0</div>
+      </div>
+    </div>
+    <h2 style="margin-top: 50px;">Guess the words games 🎮⚡️ (Vocabulary) </h2>
+    <!-- Container of daily cards-->
     <div id="days-container"></div>
   </div>
-
 
 
   <!-- Grammar Section -->
@@ -375,6 +427,33 @@
     ];
 
     const daysContainer = document.getElementById('days-container');
+
+    // Point counter
+    let p1 = 1;  // Cami  
+    let p2 = 0;  // Luke  
+    document.getElementById('p1').innerHTML  = p1  //Init
+    document.getElementById('p2').innerHTML  = p2  //Init
+
+    function increment(elementId) {
+      const box = document.getElementById(elementId);
+      if(elementId == 'p1'){
+        p1++;
+        newNumber = p1;
+      }else{
+        p2++;
+        newNumber = p2;
+      }
+      flipDigit(box , newNumber);
+    }
+
+    function flipDigit(element, newNum) {
+      element.classList.add('flip');
+      setTimeout(() => {
+        element.textContent = newNum;
+        element.classList.remove('flip');
+      }, 150);
+    }
+
 
     // Function to flip all cards of a specific day
     function flipAllCards(dayIndex) {
