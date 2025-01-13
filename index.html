@@ -281,42 +281,44 @@
     /**
      * Data structure:
      * Each element of the 'daysData' array represents one "Day",
-     * containing a label and an array of (word -> translation).
-     * You can add as many days and words as you like.
+     * containing a label and an array of (word -> translation + example).
      */
-
-      const daysData = [
+    const daysData = [
       {
         dayLabel: "Day 1",
         words: [
           { 
             word: "Exempted",     
             translation: "Freed from an obligation or liability. 🇮🇹 Esonerato" ,
-            example : [ { ex1: "example1", ex2: "example1" , ex3: "example1"}],
+            example: [
+              { ex1: "This product is exempted from taxes." },
+              { ex2: "He is exempted from the exam due to his illness." },
+              { ex3: "Members are exempted from paying the fee." },
+            ],
           },
         ]
-      },
-      
-    ]
+      }
+    ];
 
     const daysContainer = document.getElementById('days-container');
 
     // Point counter
     let p1 = 1;  // Cami  
     let p2 = 0;  // Luke  
-    document.getElementById('p1').innerHTML  = p1  //Init
-    document.getElementById('p2').innerHTML  = p2  //Init
+    document.getElementById('p1').innerHTML  = p1;  // Init
+    document.getElementById('p2').innerHTML  = p2;  // Init
 
     function increment(elementId) {
       const box = document.getElementById(elementId);
-      if(elementId == 'p1'){
+      let newNumber;
+      if(elementId === 'p1'){
         p1++;
         newNumber = p1;
-      }else{
+      } else {
         p2++;
         newNumber = p2;
       }
-      flipDigit(box , newNumber);
+      flipDigit(box, newNumber);
     }
 
     function flipDigit(element, newNum) {
@@ -326,7 +328,6 @@
         element.classList.remove('flip');
       }, 150);
     }
-
 
     // Function to flip all cards of a specific day
     function flipAllCards(dayIndex) {
@@ -345,7 +346,10 @@
       // Create the day title with flip button
       const dayTitle = document.createElement('div');
       dayTitle.classList.add('day-title');
-      dayTitle.innerHTML = `<span>${dayInfo.dayLabel}</span><button class="roll-button" onclick="flipAllCards(${index})">Flip All Cards</button>`;
+      dayTitle.innerHTML = `
+        <span>${dayInfo.dayLabel}</span>
+        <button class="roll-button" onclick="flipAllCards(${index})">Flip All Cards</button>
+      `;
       daySection.appendChild(dayTitle);
 
       // Create the card container
@@ -360,23 +364,36 @@
         // Front side (word)
         const front = document.createElement('div');
         front.classList.add('card-content', 'front');
+
         // Add the word and info icon
         const wordDiv = document.createElement('div');
+
         // Create the info icon
         const infoIcon = document.createElement('span');
         infoIcon.style.cursor = 'pointer';
         infoIcon.style.display = 'block';
         infoIcon.style.marginBottom = '30px';
         infoIcon.textContent = 'ℹ️';
-        infoIcon.onclick = () => alert('Hello!');
+
+        // Build a string with the examples for the title (tooltip)
+        const examplesString = word.example
+          .map(obj => Object.values(obj).join('\n'))
+          .join('\n\n');
+        
+        // Use the title attribute to show examples on hover
+        infoIcon.title = examplesString;
+
         // Create the word element
         const wordElement = document.createElement('strong');
         wordElement.textContent = word.word;
+
         // Append the info icon and word element to the wordDiv
         wordDiv.appendChild(infoIcon);
         wordDiv.appendChild(wordElement);
+
         // Append the wordDiv to the front
         front.appendChild(wordDiv);
+
         // Append the front to the card
         card.appendChild(front);
 
@@ -386,10 +403,12 @@
         back.textContent = word.translation;
         card.appendChild(back);
 
-        // Append card to container
+        // Flip the card on click
         card.addEventListener('click', () => {
           card.classList.toggle('flipped');
         });
+
+        // Append card to container
         cardContainer.appendChild(card);
       });
 
