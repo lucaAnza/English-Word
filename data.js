@@ -864,5 +864,119 @@ var daysData = [
         ]
       }
     ]
-  }  
+  },
+  {
+    dayLabel: "Day 10",
+    words: [
+        { 
+            word: "Swan",
+            translation: "A large aquatic bird. 🇮🇹 Cigno",
+            example: [
+                { ex1: "The swan gracefully glided across the lake." },
+                { ex2: "We saw a pair of swans swimming in the pond." },
+                { ex3: "The swan is often a symbol of elegance and beauty." }
+            ]
+        },
+        { 
+            word: "Feasible",
+            translation: "Possible to do easily or conveniently. 🇮🇹 Fattibile, praticabile",
+            example: [
+                { ex1: "The project seemed feasible with the available resources." },
+                { ex2: "Is it feasible to finish this task by tomorrow?" },
+                { ex3: "They concluded that the plan was not feasible." }
+            ]
+        },
+        { 
+            word: "Proliferation",
+            translation: "🇮🇹 Rapida diffusione, crescita",
+            example: [
+                { ex1: "The proliferation of smartphones has changed the way we communicate." },
+                { ex2: "There has been a proliferation of new restaurants in the area." },
+                { ex3: "The proliferation of fake news is a growing concern." }
+            ]
+        },
+        { 
+            word: "Grab",
+            translation: "🇮🇹 Prendere",
+            example: [
+                { ex1: "He quickly grabbed his coat and ran out the door." },
+                { ex2: "She grabbed the last piece of cake before anyone else could." },
+                { ex3: "Let’s grab a coffee before the meeting starts." }
+            ]
+        },
+        { 
+            word: "Faucet",
+            translation: "🇮🇹 Rubinetto",
+            example: [
+                { ex1: "She turned the faucet to fill the pot with water." },
+                { ex2: "The faucet in the kitchen is leaking and needs repair." },
+                { ex3: "He installed a new faucet in the bathroom." }
+            ]
+        },
+        { 
+            word: "Drill",
+            translation: "🇮🇹 Trapano,Trivella",
+            example: [
+                { ex1: "He used a drill to make holes in the wall for the shelves." },
+                { ex2: "The construction workers were drilling into the concrete." },
+                { ex3: "She bought a new drill for her DIY projects." }
+            ]
+        },
+        { 
+            word: "Lawnmower",
+            translation: "🇮🇹 Tagliaerba",
+            example: [
+                { ex1: "The lawnmower broke down, so he had to cut the grass with scissors." },
+                { ex2: "She started the lawnmower early in the morning." },
+                { ex3: "We need to buy a new lawnmower before summer." }
+            ]
+        },
+        { 
+            word: "Wheelbarrow",
+            translation: "🇮🇹 Cariola",
+            example: [
+                { ex1: "He used a wheelbarrow to transport the soil to the garden." },
+                { ex2: "The wheelbarrow was filled with bricks for the construction." },
+                { ex3: "She pushed the wheelbarrow full of leaves to the compost pile." }
+            ]
+        },
+        { 
+            word: "Run across",
+            translation: "🇮🇹 Trovare, incontrare, imbattersi in",
+            example: [
+                { ex1: "I ran across an old friend while shopping downtown." },
+                { ex2: "He ran across an interesting article in the newspaper." },
+                { ex3: "We ran across a beautiful little café during our walk." }
+            ]
+        },
+        { 
+            word: "Do up",
+            translation: "🇮🇹 Ristrutturare, chiudere, allacciare",
+            example: [
+                { ex1: "They decided to do up the old house before selling it." },
+                { ex2: "She did up her hair in a fancy style for the party." },
+                { ex3: "Can you help me do up this zipper? It’s stuck." }
+            ]
+        },
+        { 
+            word: "Tell on",
+            translation: "🇮🇹 Fare la spia sul conto di qualcuno",
+            example: [
+                { ex1: "The little boy threatened to tell on his sister if she didn't share the candy." },
+                { ex2: "She told on her brother for breaking the vase." },
+                { ex3: "I won’t tell on you, but you should apologize." }
+            ]
+        },
+        { 
+            word: "Take apart",
+            translation: "🇮🇹 Smontare, analizzare, esaminare",
+            example: [
+                { ex1: "He took apart the old clock to see how it worked." },
+                { ex2: "The mechanic took apart the engine to fix the problem." },
+                { ex3: "She took apart the argument point by point." }
+            ]
+        }
+    ]
+  }
+      
 ]
