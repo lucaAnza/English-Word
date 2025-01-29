@@ -977,6 +977,99 @@ var daysData = [
             ]
         }
     ]
+  },
+  {
+    dayLabel: "Day 11",
+    words: [
+        { 
+            word: "Leading",
+            translation: "🇮🇹 Principale, guida",
+            example: [
+                { "ex1": "She played a leading role in the project." },
+                { "ex2": "He is a leading expert in the field." }
+            ]
+        },
+        { 
+            word: "Trailing",
+            translation: "🇮🇹 Seguito, in coda",
+            example: [
+                { "ex1": "The trailing vines covered the old house." },
+                { "ex2": "Our team is trailing behind in the race." }
+            ]
+        },
+        { 
+            word: "Wheat",
+            translation: "🇮🇹 Grano",
+            example: [
+                { "ex1": "Farmers harvested the wheat in the summer." },
+                { "ex2": "Wheat is a key ingredient in bread production." }
+            ]
+        },
+        { 
+            word: "Diverting",
+            translation: "🇮🇹 Divertente, dirottato",
+            example: [
+                { "ex1": "The movie was quite diverting and enjoyable." },
+                { "ex2": "The police are diverting traffic due to roadwork." }
+            ]
+        },
+        { 
+            word: "Crops",
+            translation: "🇮🇹 Raccolti, colture",
+            example: [
+                { "ex1": "The farmer’s crops were damaged by the storm." },
+                { "ex2": "Corn and wheat are common crops in this region." }
+            ]
+        },
+        { 
+            word: "Harness",
+            translation: "🇮🇹 Imbrigliare, sfruttare / Imbracatura",
+            example: [
+                { "ex1": "Engineers are working to harness solar energy." },
+                { "ex2": "The horse wore a leather harness." }
+            ]
+        },
+        { 
+            word: "Boot",
+            translation: "🇮🇹 Stivale",
+            example: [
+                { "ex1": "She bought a new pair of winter boots." },
+                { "ex2": "His left boot was covered in mud." }
+            ]
+        },
+        { 
+            word: "Whimsical",
+            translation: "🇮🇹 Stravagante, fantasioso",
+            example: [
+                { "ex1": "The artist's paintings have a whimsical charm." },
+                { "ex2": "She decorated her room in a whimsical style." }
+            ]
+        },
+        { 
+            word: "Charm",
+            translation: "🇮🇹 Fascino, incantesimo / Affascinare",
+            example: [
+                { "ex1": "His charm made him very popular." },
+                { "ex2": "The old village has a certain charm." }
+            ]
+        },
+        { 
+            word: "Sprinkler",
+            translation: "🇮🇹 Irrigatore, annaffiatoio",
+            example: [
+                { "ex1": "The sprinkler watered the garden in the morning." },
+                { "ex2": "The fire sprinkler system activated during the emergency." }
+            ]
+        },
+        { 
+            word: "Asphalt",
+            translation: "🇮🇹 Asfalto",
+            example: [
+                { "ex1": "The workers poured fresh asphalt on the road." },
+                { "ex2": "The summer heat made the asphalt extremely hot." }
+            ]
+        }
+    ]
   }
       
 ]
