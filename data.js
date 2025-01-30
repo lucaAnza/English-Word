@@ -439,7 +439,7 @@ var daysData = [
     },
     { 
         word: "Outlier",
-        translation: "(noun) A data point differing significantly from others. 🇮🇹 Valore anomalo",
+        translation: "🇮🇹 Valore anomalo",
         example: [
         { ex1: "We removed the outlier from the dataset to get accurate results." },
         { ex2: "Her score was an outlier compared to the class average." },
@@ -448,7 +448,7 @@ var daysData = [
     },
     { 
         word: "Whooped",
-        translation: "(verb) Made a loud cry of joy or excitement. 🇮🇹 Esultato",
+        translation: "🇮🇹 Esultato",
         example: [
         { ex1: "They whooped with joy when the team scored." },
         { ex2: "He whooped loudly upon hearing the good news." },
@@ -457,7 +457,7 @@ var daysData = [
     },
     { 
         word: "Spanked",
-        translation: "(verb) Slapped or hit, often on the buttocks. 🇮🇹 Sculacciato",
+        translation: "🇮🇹 Sculacciato",
         example: [
         { ex1: "He was spanked as a child for misbehaving." },
         { ex2: "They argued about whether children should be spanked." },
@@ -472,7 +472,7 @@ var daysData = [
     "words": [
     {
         "word": "Glad",
-        "translation": "(adjective) Feeling pleased or happy about something. 🇮🇹 Felice",
+        "translation": "🇮🇹 Felice/Sollevato/Lieto",
         "example": [
         { "ex1": "I'm glad to hear you're doing well." },
         { "ex2": "She was glad to receive the invitation." },
@@ -481,7 +481,7 @@ var daysData = [
     },
     {
         "word": "Commute",
-        "translation": "(noun, verb) A regular trip between home and work; to travel regularly. 🇮🇹 Tragitto / Fare il pendolare",
+        "translation": "🇮🇹 Tragitto / Fare il pendolare",
         "example": [
         { "ex1": "My daily commute takes about an hour." },
         { "ex2": "He commutes to the city every day for work." },
@@ -490,7 +490,7 @@ var daysData = [
     },
     {
         "word": "Shipwrecked person / Castaway",
-        "translation": "(noun) Someone stranded after a shipwreck. 🇮🇹 Naufrago",
+        "translation": "🇮🇹 Naufrago",
         "example": [
         { "ex1": "The shipwrecked person was rescued after days at sea." },
         { "ex2": "The movie 'Cast Away' is about a man stranded on an island." },
@@ -499,7 +499,7 @@ var daysData = [
     },
     {
         "word": "To cast",
-        "translation": "(verb) To throw something or assign roles in a play/film. 🇮🇹 Lanciare / Assegnare",
+        "translation": "🇮🇹 Lanciare / Assegnare",
         "example": [
         { "ex1": "He cast the fishing net into the water." },
         { "ex2": "The director cast her as the lead in the movie." },
@@ -508,7 +508,7 @@ var daysData = [
     },
     {
         "word": "Looming",
-        "translation": "(adjective) Appearing large and threatening. 🇮🇹 Incombente",
+        "translation": "🇮🇹 Incombente",
         "example": [
         { "ex1": "A looming storm forced us to cancel the picnic." },
         { "ex2": "The looming deadline made everyone anxious." },
@@ -517,7 +517,7 @@ var daysData = [
     },
     {
         "word": "To report",
-        "translation": "(verb) To give a spoken or written account of something. 🇮🇹 Riferire / Segnalare",
+        "translation": "🇮🇹 Riferire / Segnalare",
         "example": [
         { "ex1": "The journalist reported on the latest news." },
         { "ex2": "You should report any suspicious activity immediately." },
@@ -526,7 +526,7 @@ var daysData = [
     },
     {
         "word": "Haggling",
-        "translation": "(noun) The act of bargaining over a price or terms. 🇮🇹 Contrattazione",
+        "translation": "🇮🇹 Contrattazione",
         "example": [
         { "ex1": "Haggling is common in street markets." },
         { "ex2": "They spent hours haggling over the price of the car." },
@@ -535,7 +535,7 @@ var daysData = [
     },
     {
         "word": "Rough",
-        "translation": "(adjective) Having an uneven surface; harsh or difficult. 🇮🇹 Ruvido / Difficile",
+        "translation": "🇮🇹 Ruvido / Difficile",
         "example": [
         { "ex1": "The road was rough and full of potholes." },
         { "ex2": "It was a rough day at work." },
@@ -544,7 +544,7 @@ var daysData = [
     },
     {
         "word": "Tissue",
-        "translation": "(noun) A piece of soft, thin paper used for wiping. 🇮🇹 Fazzolettino",
+        "translation": "🇮🇹 Fazzolettino",
         "example": [
         { "ex1": "She used a tissue to wipe her tears." },
         { "ex2": "Can you hand me a tissue?" },
@@ -553,7 +553,7 @@ var daysData = [
     },
     {
         "word": "Put your feet up",
-        "translation": "(phrase) To relax, often by resting with feet raised. 🇮🇹 Rilassarsi (mettere i piedi in alto)",
+        "translation": "🇮🇹 Rilassarsi (mettere i piedi in alto)",
         "example": [
         { "ex1": "After a long day, I just want to put my feet up." },
         { "ex2": "Put your feet up and enjoy the evening." },
@@ -562,7 +562,7 @@ var daysData = [
     },
     {
         "word": "Snag",
-        "translation": "(noun) An unexpected or hidden obstacle/problem. 🇮🇹 Intoppo",
+        "translation": "🇮🇹 Intoppo",
         "example": [
         { "ex1": "There was a snag in the project plan." },
         { "ex2": "The deal hit a snag during negotiations." },
@@ -571,7 +571,7 @@ var daysData = [
     },
     {
         "word": "Quirk",
-        "translation": "(noun) A peculiar aspect of someone's behavior or character. 🇮🇹 Stranezza",
+        "translation": "🇮🇹 Stranezza",
         "example": [
         { "ex1": "His habit of whistling while he works is a funny quirk." },
         { "ex2": "Everyone has their little quirks." },
@@ -585,7 +585,7 @@ var daysData = [
     "words": [
       {
         "word": "Huggle",
-        "translation": "(noun, verb) A blend of hugging and cuddling; to embrace snugly. 🇮🇹 Coccola / Coccolare",
+        "translation": "🇮🇹 Coccola / Coccolare",
         "example": [
           { "ex1": "She gave her child a warm huggle before bed." },
           { "ex2": "They spent the evening huggling on the couch." },
@@ -594,7 +594,7 @@ var daysData = [
       },
       {
         "word": "Hook",
-        "translation": "(noun, verb) A curved tool for catching or hanging; to fasten. 🇮🇹 Gancio / Agganciare",
+        "translation": "🇮🇹 Gancio / Agganciare",
         "example": [
           { "ex1": "Hang your coat on the hook by the door." },
           { "ex2": "He hooked the fish and pulled it into the boat." },
@@ -603,7 +603,7 @@ var daysData = [
       },
       {
         "word": "Nun",
-        "translation": "(noun) A member of a religious community of women under vows. 🇮🇹 Suora",
+        "translation": "🇮🇹 Suora",
         "example": [
           { "ex1": "The nun dedicated her life to helping the poor." },
           { "ex2": "They visited a convent where nuns live and work." },
@@ -612,7 +612,7 @@ var daysData = [
       },
       {
         "word": "Couch",
-        "translation": "(noun) A piece of furniture to sit or lie on. 🇮🇹 Divano",
+        "translation": "🇮🇹 Divano",
         "example": [
           { "ex1": "I spent the whole weekend relaxing on the couch." },
           { "ex2": "The couch is big enough for three people." },
@@ -621,7 +621,7 @@ var daysData = [
       },
       {
         "word": "To chaise",
-        "translation": "(verb) Possibly to chase; to follow or run after someone. 🇮🇹 Inseguire",
+        "translation": "🇮🇹 Inseguire",
         "example": [
           { "ex1": "He chaissed the thief down the street." },
           { "ex2": "The dog chaissed the ball into the field." },
@@ -630,7 +630,7 @@ var daysData = [
       },
       {
         "word": "Bonfire",
-        "translation": "(noun) A large open-air fire used for celebration. 🇮🇹 Falò",
+        "translation": "🇮🇹 Falò",
         "example": [
           { "ex1": "We gathered around the bonfire to roast marshmallows." },
           { "ex2": "The bonfire lit up the dark night." },
@@ -639,7 +639,7 @@ var daysData = [
       },
       {
         "word": "Harmful / Harm",
-        "translation": "(adjective, noun) Capable of causing damage; injury. 🇮🇹 Dannoso / Danno",
+        "translation": "🇮🇹 Dannoso / Danno",
         "example": [
           { "ex1": "Smoking is harmful to your health." },
           { "ex2": "The chemicals caused significant harm to the environment." },
@@ -648,7 +648,7 @@ var daysData = [
       },
       {
         "word": "To stir",
-        "translation": "(verb) To mix a substance or to provoke an emotion. 🇮🇹 Mescolare / Suscitare",
+        "translation": "🇮🇹 Mescolare / Suscitare",
         "example": [
           { "ex1": "Stir the soup occasionally to keep it from burning." },
           { "ex2": "Her speech stirred deep emotions in the audience." },
@@ -657,7 +657,7 @@ var daysData = [
       },
       {
         "word": "Stool",
-        "translation": "(noun) A seat without a back or arms. 🇮🇹 Sgabello",
+        "translation": "🇮🇹 Sgabello",
         "example": [
           { "ex1": "He sat on a stool at the kitchen counter." },
           { "ex2": "The bar stools were made of polished wood." },
@@ -666,7 +666,7 @@ var daysData = [
       },
       {
         "word": "Maple",
-        "translation": "(noun) A tree known for its sap and distinctive leaves. 🇮🇹 Acero",
+        "translation": "🇮🇹 Acero",
         "example": [
           { "ex1": "The maple tree in our yard turns bright red in autumn." },
           { "ex2": "Maple syrup is made from the sap of the maple tree." },
@@ -680,7 +680,7 @@ var daysData = [
     "words": [
       {
         "word": "Wire up",
-        "translation": "(verb) To connect electrical wires or install a wiring network. 🇮🇹 Cablare / Collegare",
+        "translation": "🇮🇹 Cablare / Collegare",
         "example": [
           { "ex1": "They hired an electrician to wire up the new office." },
           { "ex2": "He wired up the home theater system by himself." },
@@ -689,7 +689,7 @@ var daysData = [
       },
       {
         "word": "Knock down",
-        "translation": "(verb) To demolish or strike to the ground. 🇮🇹 Abbattere / Buttare giù",
+        "translation": "🇮🇹 Abbattere / Buttare giù",
         "example": [
           { "ex1": "They knocked down the old building to make space for a park." },
           { "ex2": "The strong winds knocked down several trees." },
@@ -698,7 +698,7 @@ var daysData = [
       },
       {
         "word": "Refurbish",
-        "translation": "(verb) To renovate or redecorate something. 🇮🇹 Rinnovare",
+        "translation": "🇮🇹 Rinnovare",
         "example": [
           { "ex1": "They refurbished the old house to make it look new." },
           { "ex2": "The hotel was closed for refurbishing." },
@@ -707,7 +707,7 @@ var daysData = [
       },
       {
         "word": "Lofty",
-        "translation": "(adjective) Of imposing height; elevated in style or tone. 🇮🇹 Elevato / Altisonante",
+        "translation": "🇮🇹 Elevato / Altisonante",
         "example": [
           { "ex1": "The artist had lofty ambitions for her career." },
           { "ex2": "They climbed the lofty mountain peaks." },
@@ -716,7 +716,7 @@ var daysData = [
       },
       {
         "word": "Stark",
-        "translation": "(adjective) Severe or bare in appearance. 🇮🇹 Spoglio / Crudo",
+        "translation": "🇮🇹 Spoglio / Crudo",
         "example": [
           { "ex1": "The stark landscape stretched out before them." },
           { "ex2": "Her stark warning made everyone take the situation seriously." },
@@ -725,7 +725,7 @@ var daysData = [
       },
       {
         "word": "Sprawling",
-        "translation": "(adjective) Spreading out irregularly over a large area. 🇮🇹 Disperso / Esteso",
+        "translation": "🇮🇹 Disperso / Esteso",
         "example": [
           { "ex1": "The sprawling city covered miles of land." },
           { "ex2": "They moved into a sprawling mansion in the countryside." },
@@ -734,7 +734,7 @@ var daysData = [
       },
       {
         "word": "Wiring",
-        "translation": "(noun) A system of wires providing electricity or signals. 🇮🇹 Impianto elettrico",
+        "translation": "🇮🇹 Impianto elettrico",
         "example": [
           { "ex1": "The house's old wiring needed to be replaced." },
           { "ex2": "He checked the wiring to fix the electrical issue." },
@@ -743,7 +743,7 @@ var daysData = [
       },
       {
         "word": "Heat",
-        "translation": "(noun) The quality of being hot; high temperature. 🇮🇹 Calore",
+        "translation": "🇮🇹 Calore",
         "example": [
           { "ex1": "The heat from the sun was intense that afternoon." },
           { "ex2": "She turned up the heat to make the room warmer." },
@@ -752,7 +752,7 @@ var daysData = [
       },
       {
         "word": "Marble",
-        "translation": "(noun) A hard rock used in sculpture or construction. 🇮🇹 Marmo",
+        "translation": "🇮🇹 Marmo",
         "example": [
           { "ex1": "The statue was carved out of white marble." },
           { "ex2": "The kitchen countertops are made of marble." },
@@ -761,7 +761,7 @@ var daysData = [
       },
       {
         "word": "Withdraw from / Drop out",
-        "translation": "(verb) To leave or abandon an activity or commitment. 🇮🇹 Ritirarsi / Abbandonare",
+        "translation": "🇮🇹 Ritirarsi / Abbandonare",
         "example": [
           { "ex1": "She decided to withdraw from the competition." },
           { "ex2": "He dropped out of college to start his own business." },
@@ -775,7 +775,7 @@ var daysData = [
     "words": [
       {
         "word": "Willing",
-        "translation": "(adjective) Ready to do something or eager to help. 🇮🇹 Disposto",
+        "translation": "🇮🇹 Disposto",
         "example": [
           { "ex1": "She was willing to help her friend move." },
           { "ex2": "He is always willing to try new things." },
@@ -784,7 +784,7 @@ var daysData = [
       },
       {
         "word": "Lawn",
-        "translation": "(noun) A stretch of grass, often in a garden or park. 🇮🇹 Prato",
+        "translation": "🇮🇹 Prato",
         "example": [
           { "ex1": "The children played soccer on the lawn." },
           { "ex2": "He mows the lawn every Saturday morning." },
@@ -793,7 +793,7 @@ var daysData = [
       },
       {
         "word": "Keen",
-        "translation": "(adjective) Having a strong interest or enthusiasm. 🇮🇹 Entusiasta / Appassionato",
+        "translation": "🇮🇹 Entusiasta / Appassionato",
         "example": [
           { "ex1": "He was keen on learning new languages." },
           { "ex2": "She has a keen eye for detail." },
@@ -802,7 +802,7 @@ var daysData = [
       },
       {
         "word": "Retired",
-        "translation": "(adjective) Having stopped working, usually due to age. 🇮🇹 In pensione",
+        "translation": "🇮🇹 In pensione",
         "example": [
           { "ex1": "Mr. Smith is now retired after 30 years of teaching." },
           { "ex2": "They enjoy traveling now that they're retired." },
@@ -811,7 +811,7 @@ var daysData = [
       },
       {
         "word": "Perks",
-        "translation": "(noun) Extra benefits or advantages, often related to a job. 🇮🇹 Benefici, vantaggi",
+        "translation": "🇮🇹 Benefici, vantaggi",
         "example": [
           { "ex1": "One of the perks of the job is free gym access." },
           { "ex2": "He enjoys the perks that come with his position." },
@@ -820,7 +820,7 @@ var daysData = [
       },
       {
         "word": "Rule of thumb",
-        "translation": "(noun) A general principle or guideline. 🇮🇹 Regola pratica",
+        "translation": "🇮🇹 Regola pratica",
         "example": [
           { "ex1": "A rule of thumb is to double-check your work before submitting." },
           { "ex2": "As a rule of thumb, I avoid discussing politics at work." },
@@ -829,7 +829,7 @@ var daysData = [
       },
       {
         "word": "Seldom",
-        "translation": "(adverb) Rarely, not often. 🇮🇹 Raramente",
+        "translation": "🇮🇹 Raramente",
         "example": [
           { "ex1": "She seldom eats out, preferring to cook at home." },
           { "ex2": "We seldom see each other these days." },
@@ -838,7 +838,7 @@ var daysData = [
       },
       {
         "word": "Goosebumps",
-        "translation": "(noun) Small raised areas on the skin due to cold or strong emotion. 🇮🇹 Pelle d'oca",
+        "translation": "🇮🇹 Pelle d'oca",
         "example": [
           { "ex1": "The scary movie gave me goosebumps." },
           { "ex2": "Her singing was so beautiful it gave me goosebumps." },
@@ -896,7 +896,7 @@ var daysData = [
             ]
         },
         { 
-            word: "Grab",
+            word: "To Grab",
             translation: "🇮🇹 Prendere",
             example: [
                 { ex1: "He quickly grabbed his coat and ran out the door." },

@@ -64,14 +64,24 @@ Welcome to **English World**! This website helps you learn and review English vo
 ## Data Structure
 The vocabulary is stored in a **JavaScript array of objects** called `daysData`. Each object in this array represents a **Day**, and includes:
   ```js
-  {
+  varData = [
+   {
     dayLabel: "Day 1",
     words: [
-      { word: "Exempted", translation: "Freed from an obligation. 🇮🇹 Esonerato" },
-      { word: "Humble",   translation: "Having a modest view. 🇮🇹 Umile" },
-      ...
+      { 
+         word: "Exempted",
+         translation: "🇮🇹 Esonerato",
+         example: [
+               { ex1: "He was exempted from the exam due to illness." },
+               { ex2: "We are exempted from paying the entrance fee." },
+               { ex3: "The law exempts minors from certain obligations." }
+         ]
+      },
+      {},...
     ]
-  }
+   },
+   {Day2},{Day3},...{DayN}
+  ]
   ```
 - **`dayLabel`**: The day’s title (e.g., "Day 1").  
 - **`words`**: An array of `word` objects, each with:
