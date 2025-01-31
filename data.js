@@ -5,7 +5,7 @@ var daysData = [
     words: [
     { 
         word: "Exempted",
-        translation: "Freed from an obligation or liability. 🇮🇹 Esonerato",
+        translation: "🇮🇹 Esonerato",
         example: [
         { ex1: "He was exempted from the exam due to illness." },
         { ex2: "We are exempted from paying the entrance fee." },
@@ -14,7 +14,7 @@ var daysData = [
     },
     { 
         word: "Humble",
-        translation: "Having or showing a modest or low view of one's importance. 🇮🇹 Umile",
+        translation: "🇮🇹 Umile",
         example: [
         { ex1: "Despite his success, he remained humble." },
         { ex2: "She gave a humble apology in front of everyone." },
@@ -23,7 +23,7 @@ var daysData = [
     },
     { 
         word: "Mantelpiece",
-        translation: "A structure around a fireplace, often including a shelf above it. 🇮🇹 Mensola del camino",
+        translation: "🇮🇹 Mensola del camino",
         example: [
         { ex1: "I placed family photos on the mantelpiece." },
         { ex2: "She decorated the mantelpiece with holiday ornaments." },
@@ -32,7 +32,7 @@ var daysData = [
     },
     { 
         word: "Banister",
-        translation: "The handrail and supporting posts along the side of a staircase. 🇮🇹 Corrimano",
+        translation: "🇮🇹 Corrimano",
         example: [
         { ex1: "Hold the banister to avoid slipping." },
         { ex2: "The kids like to slide down the banister." },
@@ -41,7 +41,7 @@ var daysData = [
     },
     { 
         word: "Hailstorm",
-        translation: "A storm during which hail (ice pellets) fall. 🇮🇹 Tempesta di grandine",
+        translation: "🇮🇹 Tempesta di grandine",
         example: [
         { ex1: "The hailstorm broke several windows in our house." },
         { ex2: "We rushed inside when the hailstorm began." },
@@ -50,7 +50,7 @@ var daysData = [
     },
     { 
         word: "Drought",
-        translation: "A prolonged period of abnormally low rainfall. 🇮🇹 Siccità",
+        translation: "🇮🇹 Siccità",
         example: [
         { ex1: "The crops failed because of the long drought." },
         { ex2: "They prayed for rain during the severe drought." },
@@ -59,7 +59,7 @@ var daysData = [
     },
     { 
         word: "Tributary",
-        translation: "A river or stream flowing into a larger river or lake. 🇮🇹 Affluente",
+        translation: "🇮🇹 Affluente",
         example: [
         { ex1: "A small tributary feeds into the main river near our town." },
         { ex2: "They followed the tributary upstream to find fresh water." },
@@ -68,7 +68,7 @@ var daysData = [
     },
     { 
         word: "Lightning",
-        translation: "A natural electrical discharge of high voltage. 🇮🇹 Fulmine",
+        translation: "🇮🇹 Fulmine",
         example: [
         { ex1: "Lightning lit up the entire sky during the storm." },
         { ex2: "We unplugged the TV to protect it from lightning." },
@@ -77,7 +77,7 @@ var daysData = [
     },
     { 
         word: "Turn up",
-        translation: "(phrasal verb) To arrive or appear suddenly. 🇮🇹 Presentarsi",
+        translation: "🇮🇹 Presentarsi, Alzare di intensità",
         example: [
         { ex1: "He didn't turn up for the meeting this morning." },
         { ex2: "Sometimes a good opportunity can turn up unexpectedly." },
@@ -86,7 +86,7 @@ var daysData = [
     },
     { 
         word: "Look after",
-        translation: "(phrasal verb) To take care of someone or something. 🇮🇹 Badare a",
+        translation: "🇮🇹 Badare a",
         example: [
         { ex1: "Can you look after my cat while I'm away?" },
         { ex2: "Nurses look after their patients at the hospital." },
@@ -100,7 +100,7 @@ var daysData = [
     words: [
     { 
         word: "Keep up with",
-        translation: "(phrasal verb) To move or progress at the same rate. 🇮🇹 Tenere il passo con",
+        translation: "🇮🇹 Tenere il passo con",
         example: [
         { ex1: "I can't keep up with your walking speed." },
         { ex2: "She reads tech news to keep up with the latest trends." },
@@ -109,7 +109,7 @@ var daysData = [
     },
     { 
         word: "Catch on",
-        translation: "(phrasal verb) To understand or to become popular. 🇮🇹 Capire / Diventare popolare",
+        translation: "🇮🇹 Capire / Diventare popolare",
         example: [
         { ex1: "He finally began to catch on after the second explanation." },
         { ex2: "That dance move is starting to catch on with teenagers." },
@@ -118,7 +118,7 @@ var daysData = [
     },
     { 
         word: "Get rid of",
-        translation: "(phrasal verb) To remove or discard something unwanted. 🇮🇹 Sbarazzarsi di",
+        translation: "🇮🇹 Sbarazzarsi di",
         example: [
         { ex1: "I need to get rid of these old clothes." },
         { ex2: "They used a trap to get rid of the mice." },
@@ -127,7 +127,7 @@ var daysData = [
     },
     { 
         word: "Miss out on",
-        translation: "(phrasal verb) To fail to benefit from or enjoy something. 🇮🇹 Perdersi qualcosa",
+        translation: "🇮🇹 Perdersi qualcosa",
         example: [
         { ex1: "She missed out on the concert because she was sick." },
         { ex2: "Don't miss out on this great opportunity." },
@@ -136,7 +136,7 @@ var daysData = [
     },
     { 
         word: "Techie",
-        translation: "(noun) A person very knowledgeable about technology. 🇮🇹 Appassionato di tecnologia",
+        translation: "🇮🇹 Appassionato di tecnologia",
         example: [
         { ex1: "My friend is a real techie who fixes all our gadgets." },
         { ex2: "Our office techie is setting up the new software." },
@@ -145,7 +145,7 @@ var daysData = [
     },
     { 
         word: "House",
-        translation: "(verb) To provide shelter or accommodation for someone. 🇮🇹 Ospitare / Alloggiare",
+        translation: "🇮🇹 Ospitare / Alloggiare",
         example: [
         { ex1: "They agreed to house the stray dog until it found a home." },
         { ex2: "The museum can house thousands of visitors at once." },
@@ -154,7 +154,7 @@ var daysData = [
     },
     { 
         word: "Nest / To nest",
-        translation: "(noun, verb) A bird’s structure; to build or occupy a nest. 🇮🇹 Nido / Nidificare",
+        translation: "🇮🇹 Nido / Nidificare",
         example: [
         { ex1: "We found a robin's nest in the tree." },
         { ex2: "Many birds nest here during spring." },
@@ -163,7 +163,7 @@ var daysData = [
     },
     { 
         word: "Plaster",
-        translation: "(noun) A paste for coating walls or covering wounds. 🇮🇹 Intonaco / Cerotto",
+        translation: "🇮🇹 Intonaco / Cerotto",
         example: [
         { ex1: "He used plaster to repair the hole in the wall." },
         { ex2: "She put a plaster on her cut finger." },
@@ -172,7 +172,7 @@ var daysData = [
     },
     { 
         word: "Slimy",
-        translation: "(adjective) Having a slippery or viscous texture. 🇮🇹 Viscido",
+        translation: "🇮🇹 Viscido",
         example: [
         { ex1: "The fish felt slimy before it was cleaned." },
         { ex2: "She stepped on a slimy rock near the pond." },
@@ -186,7 +186,7 @@ var daysData = [
     words: [
     { 
         word: "Rug",
-        translation: "(noun) A piece of thick fabric that covers part of a floor. 🇮🇹 Tappeto",
+        translation: "🇮🇹 Tappeto",
         example: [
         { ex1: "A large rug covers the living room floor." },
         { ex2: "He tripped over the edge of the rug." },
@@ -195,7 +195,7 @@ var daysData = [
     },
     { 
         word: "Howl",
-        translation: "(verb) To make a long, loud, mournful sound, like a wolf. 🇮🇹 Ululare",
+        translation: "🇮🇹 Ululare",
         example: [
         { ex1: "Wolves howl under the full moon." },
         { ex2: "The dog began to howl when it heard the sirens." },
@@ -204,7 +204,7 @@ var daysData = [
     },
     { 
         word: "Demure",
-        translation: "(adjective) Reserved, modest, and shy. 🇮🇹 Modesto",
+        translation: "(adjective) Reserved, modest, and shy. 🇮🇹 Modesto / Pudico / Contegnoso",
         example: [
         { ex1: "She gave a demure smile upon receiving the award." },
         { ex2: "His demure personality contrasts with his loud friends." },
@@ -213,7 +213,7 @@ var daysData = [
     },
     { 
         word: "Flabbergasted",
-        translation: "(adjective) Overwhelmed by surprise or shock. 🇮🇹 Sbalordito",
+        translation: "🇮🇹 Sbalordito",
         example: [
         { ex1: "We were flabbergasted by the final plot twist." },
         { ex2: "He looked flabbergasted when he saw his birthday surprise." },
@@ -222,7 +222,7 @@ var daysData = [
     },
     { 
         word: "Delightful",
-        translation: "(adjective) Very pleasant or charming. 🇮🇹 Delizioso",
+        translation: "🇮🇹 Delizioso",
         example: [
         { ex1: "We had a delightful time at the picnic." },
         { ex2: "That bakery makes the most delightful cakes." },
@@ -231,7 +231,7 @@ var daysData = [
     },
     { 
         word: "It's raining cats and dogs",
-        translation: "(idiom) It's raining very heavily. 🇮🇹 Sta piovendo a dirotto",
+        translation: "🇮🇹 Sta piovendo a dirotto",
         example: [
         { ex1: "Bring an umbrella; it's raining cats and dogs outside." },
         { ex2: "We can't go hiking now—it's raining cats and dogs!" },
@@ -240,7 +240,7 @@ var daysData = [
     },
     { 
         word: "Halt",
-        translation: "(noun, verb) A temporary stop; to stop moving. 🇮🇹 Arresto / Fermarsi",
+        translation: "🇮🇹 Arresto / Fermarsi",
         example: [
         { ex1: "The construction came to a halt due to the storm." },
         { ex2: "They were forced to halt when the road ended." },
@@ -249,7 +249,7 @@ var daysData = [
     },
     { 
         word: "Stain",
-        translation: "(noun) A mark or discoloration not easily removed. 🇮🇹 Macchia",
+        translation: "🇮🇹 Macchia",
         example: [
         { ex1: "The red wine left a stain on the carpet." },
         { ex2: "She tried to remove the coffee stain with cold water." },
@@ -258,7 +258,7 @@ var daysData = [
     },
     { 
         word: "Whisper",
-        translation: "(verb) To speak softly using breath without vocal cords. 🇮🇹 Sussurrare",
+        translation: "🇮🇹 Sussurrare",
         example: [
         { ex1: "We had to whisper in the library." },
         { ex2: "She whispered a secret into his ear." },
@@ -267,7 +267,7 @@ var daysData = [
     },
     { 
         word: "Glimbse",
-        translation: "(noun, verb) A brief look; to see partially. 🇮🇹 Occhiata / Intravedere",
+        translation: "🇮🇹 Occhiata / Intravedere",
         example: [
         { ex1: "She caught a glimbse of the celebrity through the window." },
         { ex2: "We only had a glimbse of the plan before it changed." },
@@ -281,7 +281,7 @@ var daysData = [
     words: [
     { 
         word: "Pouring / To Pour",
-        translation: "(verb) Causing liquid to flow from a container in a steady stream. 🇮🇹 Versare",
+        translation: "🇮🇹 Versare",
         example: [
         { ex1: "It's pouring outside—take an umbrella!" },
         { ex2: "She was pouring tea for her guests." },
@@ -290,7 +290,7 @@ var daysData = [
     },
     { 
         word: "Seeing Red",
-        translation: "(idiom) Becoming extremely angry. 🇮🇹 Andare su tutte le furie",
+        translation: "🇮🇹 Andare su tutte le furie",
         example: [
         { ex1: "I was seeing red when I found out about the betrayal." },
         { ex2: "He was seeing red after hearing the unfair criticism." },
@@ -299,7 +299,7 @@ var daysData = [
     },
     { 
         word: "Driven",
-        translation: "(adjective) Motivated or determined to achieve something. 🇮🇹 Determinato",
+        translation: "🇮🇹 Determinato",
         example: [
         { ex1: "She's driven to succeed in her career." },
         { ex2: "A driven athlete never misses a day of training." },
@@ -308,7 +308,7 @@ var daysData = [
     },
     { 
         word: "Tell off",
-        translation: "(phrasal verb) To reprimand someone angrily or sharply. 🇮🇹 Sgridare",
+        translation: "🇮🇹 Sgridare",
         example: [
         { ex1: "His mother told him off for staying out too late." },
         { ex2: "She told off the clerk for being rude." },
@@ -317,7 +317,7 @@ var daysData = [
     },
     { 
         word: "Towel",
-        translation: "(noun) A piece of thick cloth used for drying. 🇮🇹 Asciugamano",
+        translation: "🇮🇹 Asciugamano",
         example: [
         { ex1: "He grabbed a towel to dry his hands." },
         { ex2: "She left her towel at the swimming pool." },
@@ -326,7 +326,7 @@ var daysData = [
     },
     { 
         word: "Dishcloth",
-        translation: "(noun) A cloth used for washing or drying dishes. 🇮🇹 Strofinaccio",
+        translation: "🇮🇹 Strofinaccio",
         example: [
         { ex1: "Use a dishcloth to wipe the counter." },
         { ex2: "She rinsed the dishcloth and hung it to dry." },
@@ -335,7 +335,7 @@ var daysData = [
     },
     { 
         word: "Karabiner",
-        translation: "(noun) A metal loop with a sprung gate, used in climbing. 🇮🇹 Moschettone",
+        translation: "🇮🇹 Moschettone",
         example: [
         { ex1: "He attached the rope to the harness with a karabiner." },
         { ex2: "Always check your karabiner before you start climbing." },
@@ -344,7 +344,7 @@ var daysData = [
     },
     { 
         word: "Hermit crab",
-        translation: "(noun) A crab that lives in a discarded shell. 🇮🇹 Paguro",
+        translation: "🇮🇹 Paguro",
         example: [
         { ex1: "We found a hermit crab on the beach inside a small shell." },
         { ex2: "Hermit crabs switch shells as they grow." },
@@ -353,7 +353,7 @@ var daysData = [
     },
     { 
         word: "Skeptical",
-        translation: "(noun) A state of doubt or disbelief; often 'skepticism'. 🇮🇹 Scetticismo",
+        translation: "🇮🇹 Scetticismo",
         example: [
         { ex1: "She was skeptical about the new diet plan." },
         { ex2: "He approached the claim with a skeptical mindset." },
@@ -362,7 +362,7 @@ var daysData = [
     },
     { 
         word: "Word-of-mouth",
-        translation: "(noun) Information spread by verbal communication. 🇮🇹 Passaparola",
+        translation: "🇮🇹 Passaparola",
         example: [
         { ex1: "The restaurant became popular through word-of-mouth." },
         { ex2: "Word-of-mouth is often the best type of marketing." },
@@ -376,7 +376,7 @@ var daysData = [
     words: [
     { 
         word: "Hitchhike",
-        translation: "(verb) To travel by asking for free rides from passing vehicles. 🇮🇹 Fare l'autostop",
+        translation: "🇮🇹 Fare l'autostop",
         example: [
         { ex1: "They decided to hitchhike across Europe during summer." },
         { ex2: "He used to hitchhike when he was a student with little money." },
@@ -385,7 +385,7 @@ var daysData = [
     },
     { 
         word: "Annealing",
-        translation: "(noun) Heating and cooling metal/glass to remove stress. 🇮🇹 Ricottura",
+        translation: "🇮🇹 Ricottura",
         example: [
         { ex1: "Annealing strengthens the metal after it's shaped." },
         { ex2: "The glass must undergo annealing to prevent cracks." },
@@ -394,7 +394,7 @@ var daysData = [
     },
     { 
         word: "Drawbacks",
-        translation: "(noun) Disadvantages or negative aspects. 🇮🇹 Svantaggi",
+        translation: "🇮🇹 Svantaggi",
         example: [
         { ex1: "Despite many benefits, the proposal has some drawbacks." },
         { ex2: "One of the drawbacks of city life is the noise." },
@@ -403,7 +403,7 @@ var daysData = [
     },
     { 
         word: "Offspring",
-        translation: "(noun) Children or young of a person, animal, or plant. 🇮🇹 Progenie / Discendenza",
+        translation: "🇮🇹 Progenie / Discendenza",
         example: [
         { ex1: "Lionesses are very protective of their offspring." },
         { ex2: "They take pride in their successful offspring." },
@@ -412,7 +412,7 @@ var daysData = [
     },
     { 
         word: "Hurry / Hurried",
-        translation: "(verb/adjective) To move with haste; done quickly. 🇮🇹 Sbrigarsi / Affrettato",
+        translation: "🇮🇹 Sbrigarsi / Affrettato",
         example: [
         { ex1: "We need to hurry or we'll miss the bus." },
         { ex2: "She hurried to finish her project before the deadline." },
@@ -421,7 +421,7 @@ var daysData = [
     },
     { 
         word: "Hue",
-        translation: "(noun) A color or shade. 🇮🇹 Tonalità",
+        translation: "🇮🇹 Tonalità",
         example: [
         { ex1: "The painting features every hue of the rainbow." },
         { ex2: "The sky displayed a deep orange hue at sunset." },
@@ -430,7 +430,7 @@ var daysData = [
     },
     { 
         word: "Whiskers",
-        translation: "(noun) Long facial hairs on certain animals (e.g., cats). 🇮🇹 Baffi (di animale)",
+        translation: "🇮🇹 Baffi (di animale)",
         example: [
         { ex1: "A cat uses its whiskers to sense the environment." },
         { ex2: "The mouse twitched its whiskers nervously." },
@@ -594,7 +594,7 @@ var daysData = [
       },
       {
         "word": "Hook",
-        "translation": "🇮🇹 Gancio / Agganciare",
+        "translation": "🇮🇹 Gancio / Agganciare / Amo / Uncino",
         "example": [
           { "ex1": "Hang your coat on the hook by the door." },
           { "ex2": "He hooked the fish and pulled it into the boat." },
