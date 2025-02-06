@@ -1070,6 +1070,99 @@ var daysData = [
             ]
         }
     ]
-  }
-      
+  },
+  {
+    dayLabel: "Day 12",
+    words: [
+          { 
+              word: "Snobbing",
+              translation: "🇮🇹 Snobbare",
+              example: [
+                  { "ex1": "She was accused of snobbing her classmates at the party." }
+              ]
+          },
+          { 
+              word: "Sakes",
+              translation: "🇮🇹 Motivi / Causa",
+              example: [
+                  { "ex1": "For safety's sake, please wear a helmet." },
+                  { "ex2": "He did it for old times' sake." }
+              ]
+          },
+          { 
+              word: "Snappy",
+              translation: "🇮🇹 Vivace / Svelto",
+              example: [
+                  { "ex1": "His snappy response made everyone laugh." },
+                  { "ex2": "She prefers snappy and stylish outfits." }
+              ]
+          },
+          { 
+              word: "Come forward",
+              translation: "🇮🇹 Farsi avanti",
+              example: [
+                  { "ex1": "The witness decided to come forward with new evidence." }
+              ]
+          },
+          { 
+              word: "Pull the plug",
+              translation: "🇮🇹 Staccare la spina",
+              example: [
+                  { "ex1": "They pulled the plug on the failing project." }
+              ]
+          },
+          { 
+              word: "Drapes",
+              translation: "🇮🇹 Tende",
+              example: [
+                  { "ex1": "She bought new drapes for the living room." }
+              ]
+          },
+          { 
+              word: "Blanket",
+              translation: "🇮🇹 Coperta",
+              example: [
+                  { "ex1": "He wrapped himself in a warm blanket." }
+              ]
+          },
+          { 
+              word: "Shake up",
+              translation: "🇮🇹 Sconvolgere / Riorganizzare",
+              example: [
+                  { "ex1": "The scandal really shook up the entire company." },
+                  { "ex2": "They decided to shake up the team by hiring new employees." }
+              ]
+          },
+          { 
+              word: "Rape",
+              translation: "🇮🇹 Stupro / Stuprare",
+              example: [
+                  { "ex1": "The law strictly punishes rape crimes." }
+              ]
+          },
+          { 
+              word: "Bet",
+              translation: "🇮🇹 Scommessa / Scommettere",
+              example: [
+                  { "ex1": "I placed a bet on the winning team." },
+                  { "ex2": "She bet $50 on the horse race." }
+              ]
+          },
+          { 
+              word: "Shape",
+              translation: "🇮🇹 Forma / Modellare",
+              example: [
+                  { "ex1": "The sculpture has a unique shape." },
+                  { "ex2": "Education helps shape young minds." }
+              ]
+          },
+          { 
+              word: "Fed up",
+              translation: "🇮🇹 Stufo",
+              example: [
+                  { "ex1": "I’m fed up with all this traffic." }
+              ]
+          }
+      ]
+  } 
 ]
