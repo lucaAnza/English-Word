@@ -44,9 +44,11 @@
       border-bottom: 2px solid #ccc;
       display: flex;
       align-items: center;
-      justify-content: space-between; /* Align items horizontally */
+      justify-content: space-between;
       padding-bottom: 5px;
     }
+
+    /* CARD CSS */
 
     .card-container {
       display: flex;
@@ -115,6 +117,26 @@
       transform: rotateY(0deg);
     }
 
+    .card.fade-out {
+      opacity: 0;
+      transition: opacity 2s ease-out;
+    }
+
+    /* Fade-in effect for card generation */
+    .card.fade-in {
+      opacity: 0;
+      animation: fadeIn 3s forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* CARD CSS - Finish */
+
+    
     /* Button styles */
     .roll-button {
       background-color: #3f2b96;
@@ -209,8 +231,8 @@
     .flip {
       transform: rotateX(180deg);
     }
-    
-    /* CSS For info-icon on the card */
+
+    /* CSS for info-icon on the card */
     .info-icon {
       display: block;
       margin: 0 auto 20px;
@@ -228,7 +250,6 @@
 </head>
 <body>
 
-
   <h2>English World 🇬🇧 🇺🇸 (site made by Luke :)</h2>
 
   <!-- Vocabulary Section -->
@@ -244,14 +265,25 @@
         <div onclick="increment('p2')" class="digit" id="p2">0</div>
       </div>
     </div>
-    <h2 style="margin-top: 50px;">Guess the words games 🎮⚡️ (Vocabulary) </h2>
+    <h2 style="margin-top: 50px;">Guess the words games 🎮⚡️ (Vocabulary)</h2>
+
+    <!-- Random Deck Section -->
+    <div id="deck-section" class="day-section">
+      <div class="day-title">
+        <span>Random Card Deck</span>
+        <button id="toggle-language-button" class="roll-button">Toggle Language Order</button>
+      </div>
+      <div id="random-deck-container" class="card-container">
+        <!-- The 6 random cards will be generated here -->
+      </div>
+    </div>
+
     <!-- Container of daily cards-->
     <div id="days-container"></div>
   </div>
 
-
   <!-- Grammar Section -->
-  <h2 style="margin-top: 200px;">Grammar section 🇬🇧 🇺🇸 </h2>
+  <h2 style="margin-top: 200px;">Grammar section 🇬🇧 🇺🇸</h2>
   <div class="grammar-section">
     <h2>Conditional</h2>
 
@@ -291,11 +323,10 @@
       </table>
     </div>
   </div>
-  
-  <script src="data.js"></script>  <!-- Include main data structure (daysData) -->
-  
-  <script>
 
+  <script src="data.js"></script>  <!-- Ensure this file defines the global daysData array -->
+  <script>
+    /* === Existing Code (Vocabulary & Counter) === */
     const daysContainer = document.getElementById('days-container');
 
     // Point counter
@@ -333,7 +364,7 @@
       });
     }
 
-    // Iterate through daysData and create HTML structure
+    // Create the vocabulary cards by iterating through daysData
     daysData.forEach((dayInfo, index) => {
       // Create the day section wrapper
       const daySection = document.createElement('div');
@@ -368,21 +399,16 @@
         const infoIcon = document.createElement('img');
         infoIcon.src = 'info.png';
         infoIcon.alt = 'Info Icon';
-        infoIcon.classList.add('info-icon'); // <-- Add a CSS class
+        infoIcon.classList.add('info-icon');
 
-        // Build a string with the enumerated examples for the title (tooltip)
+        // Build a string with enumerated examples for the title (tooltip)
         const examplesString = word.example
           .map((exObj, index) => {
-            // Extract the first (and only) value from each exObj (e.g., ex1, ex2, etc.)
             const exampleText = Object.values(exObj)[0];
-            
-            // Return enumerated text: "1) some example", "2) another example", etc.
             return `${index + 1}) ${exampleText}`;
           })
-          // Join with a newline between each enumerated example
           .join('\n');
         
-        // Use the title attribute to show examples on hover
         infoIcon.title = examplesString;
 
         // Create the word element
@@ -393,10 +419,7 @@
         wordDiv.appendChild(infoIcon);
         wordDiv.appendChild(wordElement);
 
-        // Append the wordDiv to the front
         front.appendChild(wordDiv);
-
-        // Append the front to the card
         card.appendChild(front);
 
         // Back side (translation)
@@ -420,6 +443,113 @@
       // Append day section to main container
       daysContainer.appendChild(daySection);
     });
+
+    /* === New Code for the Random Deck Section === */
+
+    // Grab references to the deck container and toggle button
+    const deckContainer = document.getElementById('random-deck-container');
+    const toggleLanguageButton = document.getElementById('toggle-language-button');
+
+    // Compile a list of all words from daysData
+    const allWords = [];
+    daysData.forEach(day => {
+      allWords.push(...day.words);
+    });
+
+    // Global variable to track the current language order.
+    // 'normal' means the card shows: front = word, back = translation.
+    // 'reversed' means: front = translation, back = word.
+    let languageOrder = 'normal';
+
+    // Update all cards in the deck when the language order changes.
+    function updateDeckCards() {
+      const cards = deckContainer.querySelectorAll('.card');
+      cards.forEach(card => {
+        const word = card.wordData;
+        const front = card.querySelector('.front');
+        const back = card.querySelector('.back');
+        if (languageOrder === 'normal') {
+          front.textContent = word.word;
+          back.textContent = word.translation;
+        } else {
+          front.textContent = word.translation;
+          back.textContent = word.word;
+        }
+      });
+    }
+
+    // Create a single card element with a random word.
+    function createCard() {
+      const card = document.createElement('div');
+      card.classList.add('card');
+
+      const front = document.createElement('div');
+      front.classList.add('card-content', 'front');
+      const back = document.createElement('div');
+      back.classList.add('card-content', 'back');
+
+      // Pick a random word from allWords.
+      const randomIndex = Math.floor(Math.random() * allWords.length);
+      const word = allWords[randomIndex];
+      // Save the word data on the card element for later updates.
+      card.wordData = word;
+
+      if (languageOrder === 'normal') {
+        front.textContent = word.word;
+        back.textContent = word.translation;
+      } else {
+        front.textContent = word.translation;
+        back.textContent = word.word;
+      }
+
+      card.appendChild(front);
+      card.appendChild(back);
+
+      // On click: flip the card and then remove it with a fade-out effect after 3 seconds.
+      card.addEventListener('click', function() {
+        if (!card.classList.contains('flipped')) {
+          card.classList.add('flipped');
+          setTimeout(() => {
+            // Start fade-out transition
+            card.classList.add('fade-out');
+            // Wait for the fade transition to complete (1 second) before removing the card
+            setTimeout(() => {
+              card.remove();
+              // If there are no cards left in the deck, wait 1 sec and then generate a new deck.
+              if (deckContainer.children.length === 0) {
+                generateDeck()
+              }
+            }, 1500); // Match this delay with the CSS transition duration
+          }, 3000);
+        }
+      });
+
+      return card;
+    }
+
+    // Generate a deck with 6 random cards.
+    function generateDeck() {
+      deckContainer.innerHTML = ''; // Clear the current deck.
+      for (let i = 0; i < 6; i++) {
+        const card = createCard();
+        // Add the fade-in class to trigger the animation
+        card.classList.add('fade-in');  // Fade-in time is settable on CSS
+        deckContainer.appendChild(card);
+        setTimeout(() => {
+          card.classList.remove('fade-in');
+        }, 3000);   // Time this need to fit CSS Fade-in time!
+      }
+    }
+
+    // Update language order when the toggle button is clicked.
+    toggleLanguageButton.addEventListener('click', function() {
+      languageOrder = (languageOrder === 'normal') ? 'reversed' : 'normal';
+      updateDeckCards();
+    });
+
+    // Create the initial deck when the page loads.
+    generateDeck();
+
   </script>
 </body>
 </html>
