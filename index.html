@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <title>English World</title>
   <style>
-    /* Basic reset */
+   
+    /* ================================ BASIC TEMPLATE ================================ */
     * {
       box-sizing: border-box;
       margin: 0;
@@ -26,7 +27,13 @@
       text-transform: uppercase;
       letter-spacing: 2px;
     }
+    /* ================================ BASIC TEMPLATE(Finish) ================================ */
 
+
+
+
+
+    /* ================================ CARD-CONTAINERS ================================ */
     .day-section {
       background-color: rgba(255, 255, 255, 0.7);
       margin: 20px auto;
@@ -48,8 +55,35 @@
       padding-bottom: 5px;
     }
 
-    /* CARD CSS */
+    /* Prettier score styling for the deck score */
+    #deck-score {
+      background: linear-gradient(90deg, #6846c1, #3f2b96);
+      color: #fff;
+      padding: 3px 3px;
+      border-radius: 5px;
+      font-weight: bold;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      margin-left: 20px;
+      font-size: 1rem;
+    }
 
+    /* Score animation for the deck score */
+    .score-animation {
+      animation: scorePulse 0.3s ease-in-out;
+    }
+
+    @keyframes scorePulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.3); }
+      100% { transform: scale(1); }
+    }
+    /* ================================ CARD-CONTAINERS(Finish) ================================ */
+
+
+
+
+
+    /* ================================ CARD CSS ================================ */
     .card-container {
       display: flex;
       flex-wrap: wrap;
@@ -134,9 +168,20 @@
       }
     }
 
-    /* CARD CSS - Finish */
+    .info-icon {
+      display: block;
+      margin: 0 auto 20px;
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+      opacity: 0.3;             /* Default: semi-transparent */
+      transition: opacity 0.3s; /* Smooth transition */
+    }
 
-    
+    .info-icon:hover {
+      opacity: 1;              /* Fully visible on hover */
+    }
+
     /* Button styles */
     .roll-button {
       background-color: #3f2b96;
@@ -151,8 +196,11 @@
     .roll-button:hover {
       background-color: #6846c1;
     }
+    /* ================================ CARD CSS (FINISH) ================================ */
+    
 
-    /* Grammar section */
+
+    /* ================================ GRAMMAR SECTION ================================ */
     .grammar-section {
       background-color: rgba(255, 255, 255, 0.7);
       margin: 20px auto;
@@ -194,8 +242,13 @@
       background-color: #fff;
       color: #444;
     }
+    /* ================================ GRAMMAR SECTION(Finish) ================================ */
 
-    /* Point counter */
+
+
+
+
+    /* ================================ SCORE COUNTER(Finish) ================================ */
     .counter {
       display: flex;
       gap: 30px;
@@ -231,21 +284,7 @@
     .flip {
       transform: rotateX(180deg);
     }
-
-    /* CSS for info-icon on the card */
-    .info-icon {
-      display: block;
-      margin: 0 auto 20px;
-      width: 35px;
-      height: 35px;
-      cursor: pointer;
-      opacity: 0.3;             /* Default: semi-transparent */
-      transition: opacity 0.3s; /* Smooth transition */
-    }
-
-    .info-icon:hover {
-      opacity: 1;              /* Fully visible on hover */
-    }
+    /* ================================ SCORE COUNTER(Finish) ================================ */
   </style>
 </head>
 <body>
@@ -270,7 +309,10 @@
     <!-- Random Deck Section -->
     <div id="deck-section" class="day-section">
       <div class="day-title">
-        <span>Training Card Deck 🎲 </span>
+        <span>
+          Training Card Deck 🎲 
+          <span id="deck-score">Score: 0 🎯</span>
+        </span>
         <button id="toggle-language-button" class="roll-button">Toggle Language Order</button>
       </div>
       <div id="random-deck-container" class="card-container">
@@ -450,16 +492,25 @@
     const deckContainer = document.getElementById('random-deck-container');
     const toggleLanguageButton = document.getElementById('toggle-language-button');
 
-    // Compile a list of all words from daysData
-    const allWords = [];
-    daysData.forEach(day => {
-      allWords.push(...day.words);
-    });
-
     // Global variable to track the current language order.
     // 'normal' means the card shows: front = word, back = translation.
     // 'reversed' means: front = translation, back = word.
     let languageOrder = 'normal';
+
+    // Global variable for deck score and reference to the deck score element.
+    let deckScore = 0;
+    const deckScoreElement = document.getElementById('deck-score');
+
+    function updateDeckScore() {
+      // Update the displayed score
+      deckScoreElement.textContent = 'Score: ' + deckScore + ' 🎯';
+      // Add the animation class to trigger a pulse effect
+      deckScoreElement.classList.add('score-animation');
+      // Remove the animation class after 300ms so it can be re-triggered later
+      setTimeout(() => {
+        deckScoreElement.classList.remove('score-animation');
+      }, 300);
+    }
 
     // Update all cards in the deck when the language order changes.
     function updateDeckCards() {
@@ -477,6 +528,12 @@
         }
       });
     }
+
+    // Compile a list of all words from daysData
+    const allWords = [];
+    daysData.forEach(day => {
+      allWords.push(...day.words);
+    });
 
     // Create a single card element with a random word.
     function createCard() {
@@ -505,19 +562,23 @@
       card.appendChild(front);
       card.appendChild(back);
 
-      // On click: flip the card and then remove it with a fade-out effect after 3 seconds.
+      // On click: flip the card, add 1 point with animation, and then remove it with a fade-out effect.
       card.addEventListener('click', function() {
         if (!card.classList.contains('flipped')) {
+          // Increment the deck score and update the display.
+          deckScore++;
+          updateDeckScore();
+
           card.classList.add('flipped');
           setTimeout(() => {
             // Start fade-out transition
             card.classList.add('fade-out');
-            // Wait for the fade transition to complete (1 second) before removing the card
+            // Wait for the fade transition to complete (1.5 seconds here) before removing the card
             setTimeout(() => {
               card.remove();
-              // If there are no cards left in the deck, wait 1 sec and then generate a new deck.
+              // If there are no cards left in the deck, generate a new deck.
               if (deckContainer.children.length === 0) {
-                generateDeck()
+                generateDeck();
               }
             }, 1500); // Match this delay with the CSS transition duration
           }, 3000);
@@ -533,11 +594,11 @@
       for (let i = 0; i < 6; i++) {
         const card = createCard();
         // Add the fade-in class to trigger the animation
-        card.classList.add('fade-in');  // Fade-in time is settable on CSS
+        card.classList.add('fade-in');  // Fade-in time is settable in CSS
         deckContainer.appendChild(card);
         setTimeout(() => {
           card.classList.remove('fade-in');
-        }, 3000);   // Time this need to fit CSS Fade-in time!
+        }, 3000);   // Time to match the CSS fade-in duration!
       }
     }
 
