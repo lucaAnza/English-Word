@@ -1,12 +1,16 @@
 # English World 
 
-Welcome to **English World**! This website helps you learn and review English vocabulary words day by day. Each day has its own set of words, along with translations and explanations in Italian (with an Italian flag icon to highlight the translation).
-
+Welcome to **English World**! The website that helps you to learn english and review English vocabulary! 📖  
+→ [Try it now 🔥 ](https://lucaanza.github.io/English-Word/)
 ## Table of Contents
 - [English World](#english-world)
   - [Table of Contents](#table-of-contents)
   - [Overview](#overview)
   - [Features](#features)
+      - [1. Card Deck Training ⟲](#1-card-deck-training-)
+      - [2. Day Words 📅](#2-day-words-)
+      - [3. Grammar Part 📖](#3-grammar-part-)
+      - [4. Score Section 📊🏆](#4-score-section-)
   - [Installation](#installation)
   - [Usage](#usage)
     - [Self-hosted](#self-hosted)
@@ -15,26 +19,32 @@ Welcome to **English World**! This website helps you learn and review English vo
   - [Customization](#customization)
 
 
-## Overview
-**English World** is a small, self-contained web project where you can:
-- View different “Days,” each containing 10 or more words/phrases.
-- Click on a card to reveal its translation or definition (if you choose to implement the flipping-card feature).
-- Easily modify or extend the vocabulary in the code by updating the data structure.
+## Overview  
+
+The goal of this site is to make **learning English** easier and more accessible for everyone.  
+Built using **HTML and CSS**, this platform ensures a lightweight and smooth experience that works seamlessly across all devices and operating systems without the need for installations or special configurations.  
+
+The interactive features and learning tools are designed to provide an engaging experience, making English practice intuitive and enjoyable.  
+The specific functionalities of the platform are detailed in the next section ([Features](#features))
+
 
 ---
 
 ## Features
-1. **Day-by-Day Organization**  
-   Each day has its own list of words. You can focus on learning Day 1, then move to Day 2, etc.
 
-2. **Translations and Explanations**  
-   Each word/phrase comes with an English explanation and an Italian translation, denoted by the Italian flag icon (🇮🇹).
+Our application offers a comprehensive set of interactive tools designed to enhance your English learning experience:
 
-3. **Responsive Layout**  
-   The page uses basic flexible styles, so it should display decently on different screen sizes.
+#### 1. Card Deck Training ⟲  
+- Train with a dynamic **deck** of **flashcards**. Each card displays a word or its translation, allowing you to test your recall. The cards flip to reveal the translation and then fade out smoothly, keeping the practice engaging and visually appealing.
 
-4. **Easily Extensible**  
-   Want more words or days? Just update the `daysData` structure in the JavaScript code.
+#### 2. Day Words 📅  
+- Explore curated vocabulary **organized by day**. This feature helps you build your vocabulary progressively, with each day introducing a set of new words along with examples and additional details to reinforce your learning.
+
+#### 3. Grammar Part 📖  
+- Dive into grammar with tables. For example, the conditionals section provides clear explanations and examples, helping you understand complex grammar rules in a straightforward manner.
+
+#### 4. Score Section 📊🏆  
+- Track your progress with the **dynamic scoreboard**. With it, you can effectively keep track of your points and monitor your improvements over time.
 
 ---
 
