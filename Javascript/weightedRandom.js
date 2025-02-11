@@ -26,5 +26,3 @@ function updateDistribution(probabilities, selectedIndex, theta) {
   }
 }
 
-module.exports = { weightedRandomIndex, updateDistribution };
-

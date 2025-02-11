@@ -36,6 +36,7 @@ Our application offers a comprehensive set of interactive tools designed to enha
 
 #### 1. Card Deck Training ⟲  
 - Train with a dynamic **deck** of **flashcards**. Each card displays a word or its translation, allowing you to test your recall. The cards flip to reveal the translation and then fade out smoothly, keeping the practice engaging and visually appealing.
+- **Avoid card repetition** through the implementation of a probabilistic algorithm based on **Cumulative Probability**.  (`Javascript/weightedRandom.js`)
 
 #### 2. Day Words 📅  
 - Explore curated vocabulary **organized by day**. This feature helps you build your vocabulary progressively, with each day introducing a set of new words along with examples and additional details to reinforce your learning.

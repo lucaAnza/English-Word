@@ -366,12 +366,13 @@
     </div>
   </div>
 
-  <script src="Javascript/data.js"></script>  <!-- Ensure this file defines the global daysData array -->
+  <script src="Javascript/data.js"></script>  <!--Import of main datastructure-->
+  <script src="Javascript/weightedRandom.js"></script>  <!--Import of probability custums functions-->
   <script>
     /* === Existing Code (Vocabulary & Counter) === */
     const daysContainer = document.getElementById('days-container');
 
-    // Point counter
+    /* ================================ Point counter ================================ */
     let p1 = 4;  // Cami  
     let p2 = 0;  // Luke  
     document.getElementById('p1').innerHTML  = p1;  // Init
@@ -397,7 +398,14 @@
         element.classList.remove('flip');
       }, 150);
     }
+    /* ================================================================================ */
 
+
+
+
+
+
+    /* ================================ Days sections ================================ */
     // Function to flip all cards of a specific day
     function flipAllCards(dayIndex) {
       const cards = document.querySelectorAll(`#days-container .day-section:nth-child(${dayIndex + 1}) .card`);
@@ -485,8 +493,14 @@
       // Append day section to main container
       daysContainer.appendChild(daySection);
     });
+    /* ================================================================================ */
 
-    /* === New Code for the Random Deck Section === */
+
+
+
+
+    
+    /* ================================ Deck sections ================================ */
 
     // Grab references to the deck container and toggle button
     const deckContainer = document.getElementById('random-deck-container');
@@ -535,8 +549,14 @@
       allWords.push(...day.words);
     });
 
+    // Init of variables needed for the creation of the card
+    const n = allWords.length;
+    let probabilities = new Array(n).fill(1 / n);
+    const theta = 0.05;
+    
     // Create a single card element with a random word.
     function createCard() {
+      console.log("probabilities:", probabilities);  //USEFULL FOR DEBUG
       const card = document.createElement('div');
       card.classList.add('card');
 
@@ -546,8 +566,9 @@
       back.classList.add('card-content', 'back');
 
       // Pick a random word from allWords.
-      const randomIndex = Math.floor(Math.random() * allWords.length);
-      const word = allWords[randomIndex];
+      const selectedIndex = weightedRandomIndex(probabilities);  // Select index using probabilities distributions
+      updateDistribution(probabilities, selectedIndex, theta);   // Update distribution after have choosen the variable
+      const word = allWords[selectedIndex];
       let probality_array = new Array(allWords.length).fill(1);  // Init probability array with 1 
       // Save the word data on the card element for later updates.
       card.wordData = word;
@@ -611,6 +632,8 @@
 
     // Create the initial deck when the page loads.
     generateDeck();
+
+    /* ================================================================================ */
 
   </script>
 </body>
