@@ -986,7 +986,8 @@ var daysData = [
             translation: "🇮🇹 Principale, guida",
             example: [
                 { "ex1": "She played a leading role in the project." },
-                { "ex2": "He is a leading expert in the field." }
+                { "ex2": "He is a leading expert in the field." },
+                { "ex3": "Find the words leading with capital letter" }
             ]
         },
         { 
@@ -994,7 +995,8 @@ var daysData = [
             translation: "🇮🇹 Seguito, in coda",
             example: [
                 { "ex1": "The trailing vines covered the old house." },
-                { "ex2": "Our team is trailing behind in the race." }
+                { "ex2": "Our team is trailing behind in the race." },
+                { "ex3": "Make sure to remove the trailing spaces in your code" }
             ]
         },
         { 
