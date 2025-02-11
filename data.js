@@ -1164,5 +1164,108 @@ var daysData = [
               ]
           }
       ]
-  } 
+  },
+  {
+    dayLabel: "Day 13",
+    words: [
+        { 
+            word: "Wattage",
+            translation: "🇮🇹 Wattaggio",
+            example: [
+                { "ex1": "The light bulb has a high wattage, making the room very bright." },
+                { "ex2": "You should check the wattage before replacing the old lamp." }
+            ]
+        },
+        { 
+            word: "Hang-loose",
+            translation: "🇮🇹 Rilassato , senza preoccupazioni",
+            example: [
+                { "ex1": "He has a hang-loose attitude and never seems stressed." },
+                { "ex2": "Just stay hang-loose and enjoy the vacation." }
+            ]
+        },
+        { 
+            word: "Platitude",
+            translation: "🇮🇹 Frase fatta, banalità",
+            example: [
+                { "ex1": "His speech was full of platitudes and lacked real substance." },
+                { "ex2": "‘Hard work pays off’ is a common platitude people say." }
+            ]
+        },
+        { 
+            word: "Grumpy",
+            translation: "🇮🇹 Scontroso, burbero",
+            example: [
+                { "ex1": "He’s always grumpy in the morning before his coffee." },
+                { "ex2": "The grumpy old man refused to talk to his neighbors." }
+            ]
+        },
+        { 
+            word: "Hung up",
+            translation: "🇮🇹 Bloccato, ossessionato",
+            example: [
+                { "ex1": "He is still hung up on his ex-girlfriend." },
+                { "ex2": "Don’t get hung up on small mistakes—just move on." }
+            ]
+        },
+        { 
+            word: "Rake",
+            translation: "🇮🇹 Rastrello (n.), rastrellare (v.)",
+            example: [
+                { "ex1": "He used a rake to gather the fallen leaves in the yard." },
+                { "ex2": "We need to rake the garden before winter arrives." }
+            ]
+        },
+        { 
+            word: "Grasp",
+            translation: "🇮🇹 Afferrare, comprendere",
+            example: [
+                { "ex1": "She grasped the rope tightly to avoid falling." },
+                { "ex2": "He quickly grasped the concept of algebra." }
+            ]
+        },
+        { 
+            word: "Hangs",
+            translation: "🇮🇹 Appende, pende",
+            example: [
+                { "ex1": "She hangs her coat on the hook by the door." },
+                { "ex2": "The painting hangs beautifully above the fireplace." }
+            ]
+        },
+        { 
+            word: "Whole",
+            translation: "🇮🇹 Intero, completo",
+            example: [
+                { "ex1": "He ate the whole pizza by himself." },
+                { "ex2": "The whole family gathered for the holidays." }
+            ]
+        },
+        { 
+            word: "Swerving",
+            translation: "🇮🇹 Deviare, sterzare bruscamente",
+            example: [
+                { "ex1": "The car was swerving to avoid hitting the deer." },
+                { "ex2": "He was swerving through traffic dangerously." }
+            ]
+        },
+        { 
+            word: "Haggle",
+            translation: "🇮🇹 Contrattare",
+            example: [
+                { "ex1": "He tried to haggle over the price of the antique clock." },
+                { "ex2": "In some markets, it is common to haggle for a better deal." }
+            ]
+        },
+        { 
+            word: "Botched",
+            translation: "🇮🇹 Malfatto, rovinato",
+            example: [
+                { "ex1": "The botched surgery caused severe complications." },
+                { "ex2": "He botched the painting job by using the wrong color." }
+            ]
+        }
+    ]
+  }
 ]
+
+
