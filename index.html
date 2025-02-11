@@ -366,7 +366,7 @@
     </div>
   </div>
 
-  <script src="data.js"></script>  <!-- Ensure this file defines the global daysData array -->
+  <script src="Javascript/data.js"></script>  <!-- Ensure this file defines the global daysData array -->
   <script>
     /* === Existing Code (Vocabulary & Counter) === */
     const daysContainer = document.getElementById('days-container');
@@ -439,7 +439,7 @@
 
         // Create the info icon
         const infoIcon = document.createElement('img');
-        infoIcon.src = 'info.png';
+        infoIcon.src = 'Src/info.png';
         infoIcon.alt = 'Info Icon';
         infoIcon.classList.add('info-icon');
 
@@ -548,6 +548,7 @@
       // Pick a random word from allWords.
       const randomIndex = Math.floor(Math.random() * allWords.length);
       const word = allWords[randomIndex];
+      let probality_array = new Array(allWords.length).fill(1);  // Init probability array with 1 
       // Save the word data on the card element for later updates.
       card.wordData = word;
 
