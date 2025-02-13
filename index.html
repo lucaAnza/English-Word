@@ -159,7 +159,7 @@
     /* Fade-in effect for card generation */
     .card.fade-in {
       opacity: 0;
-      animation: fadeIn 3s forwards;
+      animation: fadeIn 2s forwards;
     }
 
     @keyframes fadeIn {
@@ -584,33 +584,30 @@
       card.appendChild(front);
       card.appendChild(back);
 
-      // On click: flip the card, add 1 point with animation, and then remove it with a fade-out effect.
+      // (CARD FLIPPING ON DECK)
       card.addEventListener('click', function() {
         if (!card.classList.contains('flipped')) {
-          // Increment the deck score and update the display.
           deckScore++;
           updateDeckScore();
-
+          // Flip a card
           card.classList.add('flipped');
           setTimeout(() => {
-            // Start fade-out transition
             card.classList.add('fade-out');
-            // Wait for the fade transition to complete (1.5 seconds here) before removing the card
+            console.log("HI");
             setTimeout(() => {
               card.remove();
-              // If there are no cards left in the deck, generate a new deck.
               if (deckContainer.children.length === 0) {
                 generateDeck();
               }
-            }, 1500); // Match this delay with the CSS transition duration
-          }, 3000);
+            }, 1500);  //  Time to wait for removing the card (should fit fade-out time animation)
+          }, 2000);  // Time to wait until the activation of fading-out
         }
       });
 
       return card;
     }
 
-    // Generate a deck with 6 random cards.
+    // (DECK GENERATION)
     function generateDeck() {
       deckContainer.innerHTML = ''; // Clear the current deck.
       for (let i = 0; i < 6; i++) {
@@ -620,7 +617,7 @@
         deckContainer.appendChild(card);
         setTimeout(() => {
           card.classList.remove('fade-in');
-        }, 3000);   // Time to match the CSS fade-in duration!
+        }, 2000);   // Time to match the CSS fade-in duration!
       }
     }
 
