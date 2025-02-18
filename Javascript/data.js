@@ -59,7 +59,7 @@ var daysData = [
     },
     { 
         word: "Tributary",
-        translation: "🇮🇹 Affluente",
+        translation: "🇮🇹 Affluente(fiume)",
         example: [
         { ex1: "A small tributary feeds into the main river near our town." },
         { ex2: "They followed the tributary upstream to find fresh water." },
@@ -86,7 +86,7 @@ var daysData = [
     },
     { 
         word: "Look after",
-        translation: "🇮🇹 Badare a",
+        translation: "🇮🇹 prendersi cura di",
         example: [
         { ex1: "Can you look after my cat while I'm away?" },
         { ex2: "Nurses look after their patients at the hospital." },
@@ -811,7 +811,7 @@ var daysData = [
       },
       {
         "word": "Perks",
-        "translation": "🇮🇹 Benefici, vantaggi",
+        "translation": "🇮🇹 Beneficio lavorativo (Esempio: soldi)",
         "example": [
           { "ex1": "One of the perks of the job is free gym access." },
           { "ex2": "He enjoys the perks that come with his position." },
@@ -847,7 +847,7 @@ var daysData = [
       },
       {
         "word": "Flee",
-        "translation": "(verb) To run away from something. 🇮🇹 Fuggire",
+        "translation": "🇮🇹 Fuggire (🚫 Escape)",
         "example": [
           { "ex1": "They had to flee the city due to the storm." },
           { "ex2": "The thief fled the scene before the police arrived." },
@@ -888,7 +888,7 @@ var daysData = [
         },
         { 
             word: "Proliferation",
-            translation: "🇮🇹 Rapida diffusione, crescita",
+            translation: "🇮🇹 Proliferazione , Rapida diffusione, crescita",
             example: [
                 { ex1: "The proliferation of smartphones has changed the way we communicate." },
                 { ex2: "There has been a proliferation of new restaurants in the area." },
@@ -997,6 +997,14 @@ var daysData = [
                 { "ex1": "The trailing vines covered the old house." },
                 { "ex2": "Our team is trailing behind in the race." },
                 { "ex3": "Make sure to remove the trailing spaces in your code" }
+            ]
+        },
+        { 
+            word: "Suck",
+            translation: "🇮🇹 Succhiare",
+            example: [
+                { "ex1": "Babies suck their thumbs for comfort." },
+                { "ex2": "He sucked the juice from the orange." }
             ]
         },
         { 
@@ -1266,8 +1274,109 @@ var daysData = [
                 { "ex2": "He botched the painting job by using the wrong color." }
             ]
         }
+    ],
+  },
+  {
+    dayLabel: "Day 14",
+    words: [
+        { 
+            word: "Heat up",
+            translation: "🇮🇹 Scaldare / Riscaldarsi",
+            example: [
+                { "ex1": "She put the soup on the stove to heat up." },
+                { "ex2": "The argument started to heat up quickly." }
+            ]
+        },
+        { 
+            word: "Grip",
+            translation: "🇮🇹 Presa / Afferrare",
+            example: [
+                { "ex1": "He tightened his grip on the rope." },
+                { "ex2": "She gripped the handle firmly." }
+            ]
+        },
+        { 
+            word: "Bargain",
+            translation: "🇮🇹 Affare / Contrattare",
+            example: [
+                { "ex1": "This coat was a real bargain!" },
+                { "ex2": "He tried to bargain for a better price." }
+            ]
+        },
+        { 
+            word: "Blossom",
+            translation: "🇮🇹 Fiore / Fiorire",
+            example: [
+                { "ex1": "The cherry tree began to blossom in spring." },
+                { "ex2": "Their friendship slowly blossomed over time." }
+            ]
+        },
+        { 
+            word: "Stuck",
+            translation: "🇮🇹 Bloccato",
+            example: [
+                { "ex1": "The car got stuck in the mud." },
+                { "ex2": "She felt stuck in her boring job." }
+            ]
+        },
+        { 
+            word: "Rush off",
+            translation: "🇮🇹 Andarsene di fretta",
+            example: [
+                { "ex1": "She had to rush off to catch her train." },
+                { "ex2": "He rushed off without saying goodbye." }
+            ]
+        },
+        { 
+            word: "Odds",
+            translation: "🇮🇹 Probabilità / Disparità",
+            example: [
+                { "ex1": "The odds of winning the lottery are very low." },
+                { "ex2": "They managed to succeed against all odds." }
+            ]
+        },
+        { 
+            word: "Spark",
+            translation: "🇮🇹 Scintilla / Scatenare",
+            example: [
+                { "ex1": "A small spark can start a big fire." },
+                { "ex2": "His joke sparked laughter in the room." }
+            ]
+        },
+        { 
+            word: "Heading",
+            translation: "🇮🇹 Titolo / Direzione",
+            example: [
+                { "ex1": "The article had an interesting heading." },
+                { "ex2": "We are heading north for the holidays." }
+            ]
+        },
+        { 
+            word: "Yearns to do",
+            translation: "🇮🇹 Desiderare ardentemente",
+            example: [
+                { "ex1": "She yearns to travel the world." },
+                { "ex2": "He yearned to see his family again." }
+            ]
+        },
+        { 
+            word: "Counter",
+            translation: "🇮🇹 Bancone / Contrastare",
+            example: [
+                { "ex1": "She placed her coffee on the counter." },
+                { "ex2": "He countered her argument with facts." }
+            ]
+        },
+        { 
+            word: "Slant",
+            translation: "🇮🇹 Inclinazione / Inclinare",
+            example: [
+                { "ex1": "The roof has a steep slant." },
+                { "ex2": "The sunlight slanted through the window." }
+            ]
+        }
     ]
-  }
+   }
 ]
 
 
