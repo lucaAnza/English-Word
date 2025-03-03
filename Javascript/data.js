@@ -1376,7 +1376,108 @@ var daysData = [
             ]
         }
     ]
-   }
+   },
+   {
+    dayLabel: "Day 15",
+    words: [
+            { 
+                word: "Patty",
+                translation: "🇮🇹 Polpetta / Hamburger",
+                example: [
+                    { "ex1": "She ordered a burger with a beef patty." },
+                    { "ex2": "The chef made a vegetarian patty with lentils." }
+                ]
+            },
+            { 
+                word: "Bother",
+                translation: "🇮🇹 Disturbare / Seccatura",
+                example: [
+                    { "ex1": "I don’t want to bother you, but can you help me?" },
+                    { "ex2": "The loud noise was a real bother while I was studying." }
+                ]
+            },
+            { 
+                word: "Wrapped up",
+                translation: "🇮🇹 Concludere / Essere assorto",
+                example: [
+                    { "ex1": "We wrapped up the meeting early today." },
+                    { "ex2": "He was so wrapped up in his book that he didn’t hear me." }
+                ]
+            },
+            { 
+                word: "Falls apart",
+                translation: "🇮🇹 Cadere a pezzi / Andare in rovina",
+                example: [
+                    { "ex1": "My old chair is so weak that it falls apart easily." },
+                    { "ex2": "After losing his job, his life slowly fell apart." }
+                ]
+            },
+            { 
+                word: "Rip off",
+                translation: "🇮🇹 Truffare / Truffa",
+                example: [
+                    { "ex1": "That store ripped me off! This phone is fake." },
+                    { "ex2": "Paying $50 for this cheap bag is a total rip-off." }
+                ]
+            },
+            { 
+                word: "On the hook",
+                translation: "🇮🇹 Essere nei guai / Essere responsabile",
+                example: [
+                    { "ex1": "If we lose the bet, we’ll be on the hook for $100." },
+                    { "ex2": "He’s on the hook for fixing the broken window." }
+                ]
+            },
+            { 
+                word: "Set aside",
+                translation: "🇮🇹 Mettere da parte",
+                example: [
+                    { "ex1": "She set aside some money for her vacation." },
+                    { "ex2": "Let's set aside our differences and work together." }
+                ]
+            },
+            { 
+                word: "Snail",
+                translation: "🇮🇹 Lumaca",
+                example: [
+                    { "ex1": "A snail moves very slowly." },
+                    { "ex2": "We saw a snail in the garden after the rain." }
+                ]
+            },
+            { 
+                word: "To give an edge",
+                translation: "🇮🇹 Dare un vantaggio",
+                example: [
+                    { "ex1": "Learning another language gives you an edge in business." },
+                    { "ex2": "Practicing every day gave him an edge in the competition." }
+                ]
+            },
+            { 
+                word: "Bind",
+                translation: "🇮🇹 Legare / Vincolare",
+                example: [
+                    { "ex1": "She used a rope to bind the books together." },
+                    { "ex2": "The contract binds him to stay for three years." }
+                ]
+            },
+            { 
+                word: "Blow",
+                translation: "🇮🇹 Soffiare / Colpo",
+                example: [
+                    { "ex1": "The wind will blow the leaves away." },
+                    { "ex2": "The boxer received a powerful blow to the face." }
+                ]
+            },
+            { 
+                word: "Glove",
+                translation: "🇮🇹 Guanto",
+                example: [
+                    { "ex1": "She wore a leather glove to protect her hands." },
+                    { "ex2": "He took off his gloves when he entered the house." }
+                ]
+            }
+        ]
+    }
 ]
 
 
