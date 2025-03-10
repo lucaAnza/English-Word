@@ -951,7 +951,7 @@ var daysData = [
         },
         { 
             word: "Do up",
-            translation: "🇮🇹 Ristrutturare, chiudere, allacciare",
+            translation: "🇮🇹 Ristrutturare, chiudere (vestito), allacciare (zip)",
             example: [
                 { ex1: "They decided to do up the old house before selling it." },
                 { ex2: "She did up her hair in a fancy style for the party." },
@@ -983,7 +983,7 @@ var daysData = [
     words: [
         { 
             word: "Leading",
-            translation: "🇮🇹 Principale, guida",
+            translation: "🇮🇹 Principale, guida , primo , dominante",
             example: [
                 { "ex1": "She played a leading role in the project." },
                 { "ex2": "He is a leading expert in the field." },
@@ -1352,7 +1352,7 @@ var daysData = [
             ]
         },
         { 
-            word: "Yearns to do",
+            word: "Yearn to",
             translation: "🇮🇹 Desiderare ardentemente",
             example: [
                 { "ex1": "She yearns to travel the world." },
