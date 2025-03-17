@@ -1477,6 +1477,106 @@ var daysData = [
                 ]
             }
         ]
+    },
+    {
+        dayLabel: "Day 16",
+        words: [
+            { 
+                word: "Bend",
+                translation: "🇮🇹 Piegare / Curva",
+                example: [
+                    { "ex1": "She had to bend down to pick up the keys." },
+                    { "ex2": "The road takes a sharp bend near the river." }
+                ]
+            },
+            { 
+                word: "Confin",
+                translation: "🇮🇹 Confinare",
+                example: [
+                    { "ex1": "They tried to confine the fire to one area." }
+                ]
+            },
+            { 
+                word: "Cuff",
+                translation: "🇮🇹 Polsino / Manetta / Schiaffeggiare",
+                example: [
+                    { "ex1": "He adjusted the cuff of his shirt." },
+                    { "ex2": "The officer put the suspect in cuffs." },
+                    { "ex3": "He playfully cuffed his friend on the shoulder." }
+                ]
+            },
+            { 
+                word: "Wit",
+                translation: "🇮🇹 Arguzia / Intelligenza",
+                example: [
+                    { "ex1": "His wit made the audience laugh." },
+                    { "ex2": "She used her wits to escape the trap." }
+                ]
+            },
+            { 
+                word: "Noon",
+                translation: "🇮🇹 Mezzogiorno",
+                example: [
+                    { "ex1": "The meeting is scheduled for noon." }
+                ]
+            },
+            { 
+                word: "Unwavering",
+                translation: "🇮🇹 Incrollabile / Costante",
+                example: [
+                    { "ex1": "She had unwavering faith in her team." },
+                    { "ex2": "His unwavering determination led to success." }
+                ]
+            },
+            { 
+                word: "Deputy",
+                translation: "🇮🇹 Vice / Sostituto",
+                example: [
+                    { "ex1": "The deputy took charge in the mayor’s absence." }
+                ]
+            },
+            { 
+                word: "Back end",
+                translation: "🇮🇹 Parte posteriore / Backend (informatica)",
+                example: [
+                    { "ex1": "The back end of the car was damaged." },
+                    { "ex2": "He works on the back-end of the website." }
+                ]
+            },
+            { 
+                word: "Mill",
+                translation: "🇮🇹 Mulino / Macinare",
+                example: [
+                    { "ex1": "The old mill is still in operation." },
+                    { "ex2": "They milled the wheat into flour." }
+                ]
+            },
+            { 
+                word: "Toll",
+                translation: "🇮🇹 Pedaggio / Bilancio / Suonare (campane)",
+                example: [
+                    { "ex1": "We had to pay a highway toll." },
+                    { "ex2": "The war took a heavy toll on the country." },
+                    { "ex3": "The church bells tolled at midnight." }
+                ]
+            },
+            { 
+                word: "Bare",
+                translation: "🇮🇹 Nudo / Scoprire",
+                example: [
+                    { "ex1": "He walked on the sand with bare feet." },
+                    { "ex2": "She bared her soul in the letter." }
+                ]
+            },
+            { 
+                word: "Zap",
+                translation: "🇮🇹 Fulminare / Scarica elettrica",
+                example: [
+                    { "ex1": "He was zapped by static electricity." },
+                    { "ex2": "A sudden zap of energy hit him." }
+                ]
+            }
+        ]
     }
 ]
 
