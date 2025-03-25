@@ -1562,7 +1562,7 @@ var daysData = [
             },
             { 
                 word: "Bare",
-                translation: "🇮🇹 Nudo / Scoprire",
+                translation: "🇮🇹 Nudo / Svestito / Scoprire",
                 example: [
                     { "ex1": "He walked on the sand with bare feet." },
                     { "ex2": "She bared her soul in the letter." }
@@ -1574,6 +1574,101 @@ var daysData = [
                 example: [
                     { "ex1": "He was zapped by static electricity." },
                     { "ex2": "A sudden zap of energy hit him." }
+                ]
+            }
+        ]
+    },
+    {
+    dayLabel: "Day 17",
+    words: [
+            {
+                word: "Gentle",
+                translation: "🇮🇹 Gentile / Delicato",
+                example: [
+                    { "ex1": "She gave the baby a gentle hug." },
+                    { "ex2": "Use a gentle shampoo for sensitive skin." }
+                ]
+            },
+            {
+                word: "Swellings",
+                translation: "🇮🇹 Gonfiori",
+                example: [
+                    { "ex1": "The nurse examined the swellings on his leg." }
+                ]
+            },
+            {
+                word: "To grin",
+                translation: "🇮🇹 Sorridere (a denti stretti o larghi)",
+                example: [
+                    { "ex1": "He couldn’t help but grin when he saw the surprise." }
+                ]
+            },
+            {
+                word: "Fed",
+                translation: "🇮🇹 Nutrito",
+                example: [
+                    { "ex1": "She fed the dog before leaving the house." }
+                ]
+            },
+            {
+                word: "Pull",
+                translation: "🇮🇹 Tirare",
+                example: [
+                    { "ex1": "You have to pull the door to open it." }
+                ]
+            },
+            {
+                word: "Hence",
+                translation: "🇮🇹 Perciò / Da qui",
+                example: [
+                    { "ex1": "He didn’t study, hence he failed the test." },
+                    { "ex2": "The company grew quickly, hence the need for new staff." }
+                ]
+            },
+            {
+                word: "Steady",
+                translation: "🇮🇹 Costante / Stabile",
+                example: [
+                    { "ex1": "He maintained a steady pace during the race." },
+                    { "ex2": "She has a steady income from her job." }
+                ]
+            },
+            {
+                word: "Winds up",
+                translation: "🇮🇹 Finisce / Si ritrova",
+                example: [
+                    { "ex1": "The movie winds up with a surprise ending." },
+                    { "ex2": "He always winds up doing all the work." }
+                ]
+            },
+            {
+                word: "Mat",
+                translation: "🇮🇹 Zerbino / Tappetino",
+                example: [
+                    { "ex1": "Wipe your shoes on the doormat." },
+                    { "ex2": "The carmat was full of sand after our trip." }
+                ]
+            },
+            {
+                word: "Grant",
+                translation: "🇮🇹 Concedere / Assegnare",
+                example: [
+                    { "ex1": "The judge granted him permission to speak." },
+                    { "ex2": "They granted her a full scholarship." }
+                ]
+            },
+            {
+                word: "Dolly",
+                translation: "🇮🇹 Carrello (per trasporti pesanti)",
+                example: [
+                    { "ex1": "Use a dolly to move those boxes." }
+                ]
+            },
+            {
+                word: "Belts",
+                translation: "🇮🇹 Cinture",
+                example: [
+                    { "ex1": "He wears leather belts to match his shoes." }
                 ]
             }
         ]
