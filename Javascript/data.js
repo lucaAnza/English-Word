@@ -1692,7 +1692,7 @@ var daysData = [
             },
             { 
                 word: "Heck",
-                translation: "🇮🇹 Accidenti",
+                translation: "🇮🇹 Accidenti <br> 🇮🇹 Diavolo <br> (Suprise,<br>Frustration,<br>Emphasis )",
                 example: [
                     { "ex1": "What the heck is going on here?" }
                 ]
@@ -1706,7 +1706,7 @@ var daysData = [
             },
             { 
                 word: "Squib",
-                translation: "🇮🇹 Petardo",
+                translation: "🇮🇹 Petardo <br> 🇮🇹 Testo satirico <br>",
                 example: [
                     { "ex1": "The firework was a damp squib and didn’t explode." }
                 ]
@@ -1720,7 +1720,7 @@ var daysData = [
             },
             { 
                 word: "Hump",
-                translation: "🇮🇹 Gobba",
+                translation: "🇮🇹 Gobba <br> 🇮🇹 Dosso (speed hump)<br>🇮🇹 Mercoledì (hump day)",
                 example: [
                     { "ex1": "The camel’s hump stores fat, not water." }
                 ]

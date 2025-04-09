@@ -671,7 +671,7 @@
         // Back side (translation)
         const back = document.createElement('div');
         back.classList.add('card-content', 'back');
-        back.textContent = word.translation;
+        back.innerHTML = word.translation;
         card.appendChild(back);
 
         // Flip the card on click
