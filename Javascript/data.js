@@ -456,8 +456,8 @@ var daysData = [
         ]
     },
     { 
-        word: "Spanked",
-        translation: "🇮🇹 Sculacciato",
+        word: "To spank",
+        translation: "🇮🇹 Sculacciare",
         example: [
         { ex1: "He was spanked as a child for misbehaving." },
         { ex2: "They argued about whether children should be spanked." },
@@ -1092,7 +1092,7 @@ var daysData = [
               ]
           },
           { 
-              word: "Sakes",
+              word: "Sake",
               translation: "🇮🇹 Motivi / Causa",
               example: [
                   { "ex1": "For safety's sake, please wear a helmet." },
@@ -1235,8 +1235,8 @@ var daysData = [
             ]
         },
         { 
-            word: "Hangs",
-            translation: "🇮🇹 Appende, pende",
+            word: "To Hang",
+            translation: "🇮🇹 Appendere, pende",
             example: [
                 { "ex1": "She hangs her coat on the hook by the door." },
                 { "ex2": "The painting hangs beautifully above the fireplace." }
@@ -1669,6 +1669,95 @@ var daysData = [
                 translation: "🇮🇹 Cinture",
                 example: [
                     { "ex1": "He wears leather belts to match his shoes." }
+                ]
+            }
+        ]
+    },
+    {
+        dayLabel: "Day 18",
+        words: [
+            { 
+                word: "Ashamed",
+                translation: "🇮🇹 Vergognoso",
+                example: [
+                    { "ex1": "She felt ashamed of yelling at her friend." }
+                ]
+            },
+            { 
+                word: "Bloom",
+                translation: "🇮🇹 Fiorire",
+                example: [
+                    { "ex1": "The cherry trees bloom beautifully in spring." }
+                ]
+            },
+            { 
+                word: "Heck",
+                translation: "🇮🇹 Accidenti",
+                example: [
+                    { "ex1": "What the heck is going on here?" }
+                ]
+            },
+            { 
+                word: "Gall",
+                translation: "🇮🇹 Sfacciataggine",
+                example: [
+                    { "ex1": "He had the gall to show up late without apologizing." }
+                ]
+            },
+            { 
+                word: "Squib",
+                translation: "🇮🇹 Petardo",
+                example: [
+                    { "ex1": "The firework was a damp squib and didn’t explode." }
+                ]
+            },
+            { 
+                word: "Peak",
+                translation: "🇮🇹 Vetta",
+                example: [
+                    { "ex1": "We finally reached the mountain peak at noon." }
+                ]
+            },
+            { 
+                word: "Hump",
+                translation: "🇮🇹 Gobba",
+                example: [
+                    { "ex1": "The camel’s hump stores fat, not water." }
+                ]
+            },
+            { 
+                word: "Proof",
+                translation: "🇮🇹 Prova",
+                example: [
+                    { "ex1": "She showed proof that she had completed the task." }
+                ]
+            },
+            { 
+                word: "Spiffy",
+                translation: "🇮🇹 Elegante",
+                example: [
+                    { "ex1": "You look spiffy in that new suit!" }
+                ]
+            },
+            { 
+                word: "Gamble",
+                translation: "🇮🇹 Scommettere",
+                example: [
+                    { "ex1": "He likes to gamble on horse races." }
+                ]
+            },
+            { 
+                word: "Clue",
+                translation: "🇮🇹 Indizio",
+                example: [
+                    { "ex1": "The detective found a clue near the window." }
+                ]
+            },
+            { 
+                word: "Tape",
+                translation: "🇮🇹 Nastro",
+                example: [
+                    { "ex1": "She used tape to seal the box." }
                 ]
             }
         ]
