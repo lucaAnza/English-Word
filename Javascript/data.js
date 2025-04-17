@@ -698,7 +698,7 @@ var daysData = [
       },
       {
         "word": "Refurbish",
-        "translation": "🇮🇹 Rinnovare",
+        "translation": "🇮🇹 Rinnovare/ristrutturare (formale)",
         "example": [
           { "ex1": "They refurbished the old house to make it look new." },
           { "ex2": "The hotel was closed for refurbishing." },
@@ -951,7 +951,7 @@ var daysData = [
         },
         { 
             word: "Do up",
-            translation: "🇮🇹 Ristrutturare, chiudere (vestito), allacciare (zip)",
+            translation: "🇮🇹 Ristrutturare (informale) <br> 🇮🇹 chiudere (vestito) <br> 🇮🇹 allacciare (zip)",
             example: [
                 { ex1: "They decided to do up the old house before selling it." },
                 { ex2: "She did up her hair in a fancy style for the party." },
@@ -983,7 +983,7 @@ var daysData = [
     words: [
         { 
             word: "Leading",
-            translation: "🇮🇹 Principale, guida , primo , dominante",
+            translation: "🇮🇹 Principale <br> 🇮🇹 di spicco <br> 🇮🇹 dominante",
             example: [
                 { "ex1": "She played a leading role in the project." },
                 { "ex2": "He is a leading expert in the field." },
@@ -1305,7 +1305,7 @@ var daysData = [
         },
         { 
             word: "Blossom",
-            translation: "🇮🇹 Fiore / Fiorire",
+            translation: "🇮🇹 Fiorire (frutto) <br> 🇮🇹 Fiorire (met.)",
             example: [
                 { "ex1": "The cherry tree began to blossom in spring." },
                 { "ex2": "Their friendship slowly blossomed over time." }
@@ -1627,10 +1627,11 @@ var daysData = [
             },
             {
                 word: "Steady",
-                translation: "🇮🇹 Costante / Stabile",
+                translation: "🇮🇹 Costante / Stabile <br> 🇮🇹 In posizione ",
                 example: [
                     { "ex1": "He maintained a steady pace during the race." },
-                    { "ex2": "She has a steady income from her job." }
+                    { "ex2": "She has a steady income from her job." }, 
+                    { "ex3": "He held the ladder steady while I climbed up." }
                 ]
             },
             {
@@ -1685,7 +1686,7 @@ var daysData = [
             },
             { 
                 word: "Bloom",
-                translation: "🇮🇹 Fiorire",
+                translation: "🇮🇹 Fiorire generico",
                 example: [
                     { "ex1": "The cherry trees bloom beautifully in spring." }
                 ]
@@ -1741,7 +1742,7 @@ var daysData = [
             },
             { 
                 word: "Gamble",
-                translation: "🇮🇹 Scommettere",
+                translation: "🇮🇹 Scommettere / Rischiare",
                 example: [
                     { "ex1": "He likes to gamble on horse races." }
                 ]
@@ -1761,7 +1762,111 @@ var daysData = [
                 ]
             }
         ]
+    },
+    {
+        dayLabel: "Day 19",
+        words: [
+            { 
+                word: "bonkers",
+                translation: "🇮🇹 fuori di testa",
+                example: [
+                    { "ex1": "He went completely bonkers when he saw the bill." },
+                    { "ex2": "That idea is bonkers."}
+                ]
+            },
+            { 
+                word: "oven",
+                translation: "🇮🇹 forno",
+                example: [
+                    { "ex1": "She took the cake out of the oven just in time." }
+                ]
+            },
+            { 
+                word: "napkin",
+                translation: "🇮🇹 tovagliolo",
+                example: [
+                    { "ex1": "He wiped his mouth with a napkin after eating." }
+                ]
+            },
+            { 
+                word: "crap out",
+                translation: "🇮🇹 smettere di funzionare <br> 🇮🇹 perdere (giochi da dado)",
+                example: [
+                    { "ex1": "My laptop crapped out right before the deadline." },
+                    { "ex2": "He crapped out on his first roll." }
+                ]
+            },
+            { 
+                word: "mess",
+                translation: "🇮🇹 disordine <br> 🇮🇹 Situazione complicata  ",
+                example: [
+                    { "ex1": "Your room is a complete mess—please clean it up!" },
+                    { "ex2": "His life is a mess right now."}
+                ]
+            },
+            { 
+                word: "complaint",
+                translation: "🇮🇹 lamentela <br>🇮🇹 malessere (in ambito medico) <br>🇮🇹 reclamo",
+                example: [
+                    { "ex1": "The customer filed a complaint about the poor service." },
+                    { "ex2": "He went to the doctor with a stomach complaint." },
+                    { "ex3" : "She filed a complaint about the noise"}
+                ]
+            },
+            { 
+                word: "suitable",
+                translation: "🇮🇹 adatto/idoneo",
+                example: [
+                    { "ex1": "She’s a suitable candidate for the job."},
+                    { "ex2": "That dress is suitable for the occasion." }
+                ]
+            },
+            { 
+                word: "needle",
+                translation: "🇮🇹 ago(medico) <br>\ 🇮🇹 ago (cucito) <br>🇮🇹 ago (pino)",
+                example: [
+                    { "ex1": "The doctor used clean needles for the injection." },
+                    { "ex2": "She threaded the needle to sew the button" },
+                    { "ex3": "The forest floor was covered in pine needles" }
+                ]
+            },
+            { 
+                word: "stabbed",
+                translation: "🇮🇹 accoltellato <br>🇮🇹 pugnalato (met.)",
+                example: [
+                    { "ex1": "He was stabbed in the back during the fight." },
+                    { "ex2": "I trusted her, but she stabbed me in the back." }
+                ]
+            },
+            { 
+                word: "burden",
+                translation: "🇮🇹 peso <br>🇮🇹 peso (met.)",
+                example: [
+                    { "ex1" : "He carried a heavy burden on his back."},
+                    { "ex2": "Carrying that secret was a heavy burden." }
+                ]
+            },
+            { 
+                word: "sorrow",
+                translation: "🇮🇹 dolore / tristezza <br> 🇮🇹 rimorso <br> 🇮🇹 compassione",
+                example: [
+                    { "ex1": "Her heart was filled with sorrow after the loss." },
+                    { "ex2": "He felt deep sorrow for not apologizing before it was too late." },
+                    { "ex3": "She looked at the homeless man with sorrow in her eyes, wishing she could do more to help." }
+                ]
+            },
+            { 
+                word: "fall upon",
+                translation: "🇮🇹 abbattersi su <br> 🇮🇹 attaccare improvvisamente <br> 🇮🇹 notare qualcosa",
+                example: [
+                    { "ex1": "Darkness began to fall upon the city." },
+                    { "ex2": "The soldiers fell upon the enemy at dawn." },
+                    { "ex3": "His gaze fell upon an old photograph." }
+                ]
+            }
+        ]
     }
+    
 ]
 
 
