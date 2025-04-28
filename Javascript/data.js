@@ -870,7 +870,7 @@ var daysData = [
     words: [
         { 
             word: "Swan",
-            translation: "A large aquatic bird. 🇮🇹 Cigno",
+            translation: "🇮🇹 Cigno",
             example: [
                 { ex1: "The swan gracefully glided across the lake." },
                 { ex2: "We saw a pair of swans swimming in the pond." },
@@ -1211,11 +1211,12 @@ var daysData = [
             ]
         },
         { 
-            word: "Hung up",
-            translation: "🇮🇹 Bloccato, ossessionato",
+            word: "Hang up",
+            translation: "🇮🇹 Terminare una call <br> 🇮🇹 Ossessionato <br> 🇮🇹 Appendere un abito",
             example: [
-                { "ex1": "He is still hung up on his ex-girlfriend." },
-                { "ex2": "Don’t get hung up on small mistakes—just move on." }
+                { "ex1"  : "I had to hang up because I was running late"},
+                { "ex2": "He is still hung up on his ex-girlfriend." },
+                { "ex3": "Please hang up your jacket when you come inside." }
             ]
         },
         { 
@@ -1236,7 +1237,7 @@ var daysData = [
         },
         { 
             word: "To Hang",
-            translation: "🇮🇹 Appendere, pende",
+            translation: "🇮🇹 Appendere, pende (hung - passato)",
             example: [
                 { "ex1": "She hangs her coat on the hook by the door." },
                 { "ex2": "The painting hangs beautifully above the fireplace." }
@@ -1604,10 +1605,12 @@ var daysData = [
                 ]
             },
             {
-                word: "Fed",
-                translation: "🇮🇹 Nutrito",
+                word: "To Feed (past: fed)",
+                translation: "🇮🇹 Nutrire <br> 🇮🇹 Ricaricare stampante",
                 example: [
-                    { "ex1": "She fed the dog before leaving the house." }
+                    { "ex1": "She fed the dog before leaving the house." },
+                    { "ex2": "He fed paper into the printer." },
+                    { "ex3": "The news channels feed us with updates every hour." }
                 ]
             },
             {
@@ -1831,7 +1834,7 @@ var daysData = [
                 ]
             },
             { 
-                word: "stabbed",
+                word: "to stab",
                 translation: "🇮🇹 accoltellato <br>🇮🇹 pugnalato (met.)",
                 example: [
                     { "ex1": "He was stabbed in the back during the fight." },
