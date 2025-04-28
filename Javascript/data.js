@@ -1868,7 +1868,100 @@ var daysData = [
                 ]
             }
         ]
+    },
+    {
+        dayLabel: "Day 20",
+        words: [
+            { 
+                word: "Wheel",
+                translation: "🇮🇹 Ruota",
+                example: [
+                    { "ex1": "The wheel of the car got stuck in the mud." }
+                ]
+            },
+            { 
+                word: "Regarding",
+                translation: "🇮🇹 Riguardo a",
+                example: [
+                    { "ex1": "I have a question regarding your last email." }
+                ]
+            },
+            { 
+                word: "Nutty",
+                translation: "🇮🇹 Pazzo <br> 🇮🇹 Nocciolato",
+                example: [
+                    { "ex1": "His ideas are a bit nutty, but sometimes they work." },
+                    { "ex2": "I love nutty chocolate bars with pieces of almonds." }
+                ]
+            },
+            { 
+                word: "Bowel",
+                translation: "🇮🇹 Intestino",
+                example: [
+                    { "ex1": "Bowel health is important for overall well-being." }
+                ]
+            },
+            { 
+                word: "Nasty",
+                translation: "🇮🇹 Cattivo <br> 🇮🇹 Sgradevole",
+                example: [
+                    { "ex1": "He made a nasty comment during the meeting." },
+                    { "ex2": "The milk had a nasty smell, so I threw it away." }
+                ]
+            },
+            { 
+                word: "Tailpipe",
+                translation: "🇮🇹 Marmitta",
+                example: [
+                    { "ex1": "Smoke was coming out of the car’s tailpipe." }
+                ]
+            },
+            { 
+                word: "Plain",
+                translation: "🇮🇹 Semplice <br> 🇮🇹 Pianura",
+                example: [
+                    { "ex1": "She wore a plain white shirt to the interview." },
+                    { "ex2": "The horse ran across the wide plain." }
+                ]
+            },
+            { 
+                word: "Marvelous",
+                translation: "🇮🇹 Meraviglioso",
+                example: [
+                    { "ex1": "We had a marvelous time at the party." }
+                ]
+            },
+            { 
+                word: "Goofy",
+                translation: "🇮🇹 Sciocco",
+                example: [
+                    { "ex1": "He has a goofy smile that makes everyone laugh." }
+                ]
+            },
+            { 
+                word: "Claw",
+                translation: "🇮🇹 Artiglio",
+                example: [
+                    { "ex1": "The cat scratched the sofa with its sharp claws." }
+                ]
+            },
+            { 
+                word: "Bury (past: buried)",
+                translation: "🇮🇹 Seppellire",
+                example: [
+                    { "ex1": "They decided to bury the time capsule under the oak tree." }
+                ]
+            },
+            { 
+                word: "Flunk",
+                translation: "🇮🇹 Bocciare (esame)",
+                example: [
+                    { "ex1": "If you don’t study, you might flunk the exam." }
+                ]
+            }
+        ]
     }
+    
     
 ]
 
