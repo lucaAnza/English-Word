@@ -1960,7 +1960,108 @@ var daysData = [
                 ]
             }
         ]
+    },
+    {
+        dayLabel: "Day 21",
+        words: [
+          {
+            word: "Swell",
+            translation: "🇮🇹 Eccellente/Buono <br> 🇮🇹 Gonfiarsi (pressione,botta) <br> 🇮🇹 Mareggiata",
+            example: [
+              { "ex1": "That’s a swell idea!" },
+              { "ex2": "There was a painful swell on his forehead." },
+              { "ex3" : "A big swell is coming from the Atlantic"}
+            ]
+          },
+          {
+            word: "Wealthy",
+            translation: "🇮🇹 Ricco (soldi)",
+            example: [
+              { "ex1": "She comes from a wealthy family." }
+            ]
+          },
+          {
+            word: "Better off",
+            translation: "🇮🇹 Stare meglio / Essere in una situazione migliore",
+            example: [
+              { "ex1": "You’re better off without him." },
+              { "ex2" : "After getting the new job, she's much better off."}
+            ]
+          },
+          {
+            word: "To lie / lie",
+            translation: "🇮🇹 Mentire <br> 🇮🇹 <br> Stendersi  <br> 🇮🇹 Trovarsi",
+            example: [
+              { "ex1": "She told a lie to avoid punishment." },
+              { "ex2": "I’m going to lie down for a while" },
+              { "ex3": "The keys are lying on the table." }
+            ]
+          },
+          {
+            word: "Call off",
+            translation: "🇮🇹 Annullare / Cancellare",
+            example: [
+              { "ex1": "They had to call off the wedding due to the storm." }
+            ]
+          },
+          {
+            word: "To turn green",
+            translation: "🇮🇹 Avere la nausea <br> 🇮🇹 essere invidioso",
+            example: [
+              { "ex1": "She turned green after the roller coaster ride." },
+              { "ex2": "He turned green with envy when he saw my new car" }
+            ]
+          },
+          {
+            word: "Riptide",
+            translation: "🇮🇹 Rissaca <br> 🇮🇹 Corrente di ritorno",
+            example: [
+              { "ex1": "Swimmers must be careful not to get caught in a riptide." },
+              { "ex2": "The riptide pulled them far from the shore." }
+            ]
+          },
+          {
+            word: "Right-hand man",
+            translation: "🇮🇹 Braccio destro (met.)",
+            example: [
+              { "ex1": "He’s the CEO’s right-hand man—he handles everything." }
+            ]
+          },
+          {
+            word: "Lump",
+            translation: "🇮🇹 Bozzo <br> 🇮🇹 Nodo in gola (met.)",
+            example: [
+              { "ex1": "There was a lump on her neck that worried the doctor." },
+              { "ex2": "He felt a lump in his throat as he spoke." }
+            ]
+          },
+          {
+            word: "Shelf (plural : Shelves)",
+            translation: "🇮🇹 Mensola / Ripiano",
+            example: [
+              { "ex1": "I placed the books on the top shelf." }
+            ]
+          },
+          {
+            word: "Slip",
+            translation: "🇮🇹 Scivolare <br>  🇮🇹 Sbaglio <br> 🇮🇹 Bigliettino",
+            example: [
+              { "ex1": "Be careful not to slip on the wet floor." },
+              { "ex2": "It was just a slip of the tongue." },
+              { "ex3": "He handed me a slip of paper with the address." }
+            ]
+          },
+          {
+            word: "Straightforward",
+            translation: "🇮🇹 Diretto <br> 🇮🇹 Semplice",
+            example: [
+              { "ex1": "She’s a very straightforward person" },
+              { "ex2": "It’s a straightforward process; just follow the steps." }
+            ]
+          }
+        ]
     }
+      
     
     
 ]
