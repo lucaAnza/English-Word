@@ -2066,88 +2066,102 @@ var daysData = [
     words: [
         { 
             word: "Mold",
-            translation: "🇮🇹 Muffa",
+            translation: "🇮🇹 Muffa <br> 🇮🇹 Stampo <br> 🇮🇹 Forma(met.)",
             example: [
-                { "ex1": "The bread was covered in green mold after a week." }
+                { "ex1": "The bread was covered in green mold after a week." },
+                { "ex2": "Pour the chocolate into the mold" },
+                { "ex3": "He was cast in a different mold" },
+                
             ]
         },
         { 
             word: "As a matter of fact",
-            translation: "🇮🇹 In effetti",
+            translation: "🇮🇹 In effetti , a dire il vero",
             example: [
                 { "ex1": "As a matter of fact, I was just about to call you." }
             ]
         },
         { 
             word: "Witness",
-            translation: "🇮🇹 Testimone / Testimoniare",
+            translation: "🇮🇹 Testimone/testimoniare <br> 🇮🇹 Assistere",
             example: [
-                { "ex1": "The witness described what he saw to the police." }
+                { "ex1": "The witness described what he saw to the police." },
+                { "ex2": "I witnessed the robbery" }
             ]
         },
         { 
             word: "Ramble",
-            translation: "🇮🇹 Divagare",
+            translation: "🇮🇹 Divagare <br> 🇮🇹 Passeggiare senza meta <br> 🇮🇹 Crescere in modo disordinato (per piante o rami)",
             example: [
-                { "ex1": "He tends to ramble when he's nervous." }
+                { "ex1": "He tends to ramble when he's nervous." },
+                { "ex2" : "We spent the afternoon rambling through the hills"},
+                { "ex3" : "The rose bushes rambled over the fence"}
             ]
         },
         { 
             word: "Flood",
-            translation: "🇮🇹 Inondazione / Inondare",
+            translation: "🇮🇹 Inondazione <br> 🇮🇹 Fiume di qualcosa (met.)",
             example: [
-                { "ex1": "The river overflowed and flooded the nearby houses." }
+                { "ex1": "The river overflowed and flooded the nearby houses." },
+                { "ex2" : "A flood of emotions overcame her."}
             ]
         },
         { 
             word: "Waif",
-            translation: "🇮🇹 Orfanello",
+            translation: "🇮🇹 Orfanello/trovatello",
             example: [
                 { "ex1": "The little waif wandered the streets alone." }
             ]
         },
         { 
             word: "Upstream",
-            translation: "🇮🇹 A monte",
+            translation: "🇮🇹 A monte <br> 🇮🇹 Alla radice (met.)",
             example: [
-                { "ex1": "The salmon swam upstream to spawn." }
+                { "ex1": "The salmon swam upstream to spawn." },
+                { "ex2" : "We need to fix the problem upstream in the supply chain"},
             ]
         },
         { 
             word: "Skunk",
-            translation: "🇮🇹 Puzzola",
+            translation: "🇮🇹 Puzzola <br> 🇮🇹 Traditore,persona spregievole",
             example: [
-                { "ex1": "A skunk sprayed our dog last night!" }
+                { "ex1": "A skunk sprayed our dog last night!" },
+                { "ex2" : "You skunk! You lied to me!"}
             ]
         },
         { 
             word: "Butt",
-            translation: "🇮🇹 Sedere",
+            translation: "🇮🇹 Sedere(corpo) <br> 🇮🇹 Mozzicone <br> 🇮🇹 Bersaglio(arcaico o tecnico, come nel tiro con l’arco)",
             example: [
-                { "ex1": "He slipped and landed on his butt." }
+                { "ex1": "He slipped and landed on his butt." },
+                { "ex2" : "Pick up that cigarette butt!"},
+                { "ex3": "The arrows hit the butt" }
             ]
         },
         { 
             word: "Tie",
-            translation: "🇮🇹 Cravatta / Legare",
+            translation: "🇮🇹 Cravatta <br> 🇮🇹 Legare <br> 🇮🇹 Pareggio <br> 🇮🇹 Vincolare",
             example: [
                 { "ex1": "He wore a red tie to the meeting." },
-                { "ex2": "She used a string to tie the package." }
+                { "ex2": "She used a string to tie the package." },
+                { "ex3" : "The game ended in a tie"},
+                { "ex4" : "The two companies are tied by a contract"}
             ]
         },
         { 
             word: "Charge",
-            translation: "🇮🇹 Accusare / Accusa",
+            translation: "🇮🇹 Accusare <br> 🇮🇹 Accusa <br> 🇮🇹 Caricare dispositivo",
             example: [
                 { "ex1": "They charged him with theft." },
-                { "ex2": "The charge was later dropped due to lack of evidence." }
+                { "ex2": "The charge was later dropped due to lack of evidence." },
+                { "ex3": "Charge your phone" }
             ]
         },
         { 
             word: "Misfeasance",
             translation: "🇮🇹 Illecito civile",
             example: [
-                { "ex1": "The company was sued for misfeasance in public office." }
+                { "ex1": "The company was sued for misfeasance in public office." },
             ]
         }
     ]
