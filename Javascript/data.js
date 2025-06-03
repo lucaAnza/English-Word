@@ -2060,10 +2060,98 @@ var daysData = [
             ]
           }
         ]
-    }
-      
-    
-    
+    },
+    {
+    dayLabel: "Day 22",
+    words: [
+        { 
+            word: "Mold",
+            translation: "🇮🇹 Muffa",
+            example: [
+                { "ex1": "The bread was covered in green mold after a week." }
+            ]
+        },
+        { 
+            word: "As a matter of fact",
+            translation: "🇮🇹 In effetti",
+            example: [
+                { "ex1": "As a matter of fact, I was just about to call you." }
+            ]
+        },
+        { 
+            word: "Witness",
+            translation: "🇮🇹 Testimone / Testimoniare",
+            example: [
+                { "ex1": "The witness described what he saw to the police." }
+            ]
+        },
+        { 
+            word: "Ramble",
+            translation: "🇮🇹 Divagare",
+            example: [
+                { "ex1": "He tends to ramble when he's nervous." }
+            ]
+        },
+        { 
+            word: "Flood",
+            translation: "🇮🇹 Inondazione / Inondare",
+            example: [
+                { "ex1": "The river overflowed and flooded the nearby houses." }
+            ]
+        },
+        { 
+            word: "Waif",
+            translation: "🇮🇹 Orfanello",
+            example: [
+                { "ex1": "The little waif wandered the streets alone." }
+            ]
+        },
+        { 
+            word: "Upstream",
+            translation: "🇮🇹 A monte",
+            example: [
+                { "ex1": "The salmon swam upstream to spawn." }
+            ]
+        },
+        { 
+            word: "Skunk",
+            translation: "🇮🇹 Puzzola",
+            example: [
+                { "ex1": "A skunk sprayed our dog last night!" }
+            ]
+        },
+        { 
+            word: "Butt",
+            translation: "🇮🇹 Sedere",
+            example: [
+                { "ex1": "He slipped and landed on his butt." }
+            ]
+        },
+        { 
+            word: "Tie",
+            translation: "🇮🇹 Cravatta / Legare",
+            example: [
+                { "ex1": "He wore a red tie to the meeting." },
+                { "ex2": "She used a string to tie the package." }
+            ]
+        },
+        { 
+            word: "Charge",
+            translation: "🇮🇹 Accusare / Accusa",
+            example: [
+                { "ex1": "They charged him with theft." },
+                { "ex2": "The charge was later dropped due to lack of evidence." }
+            ]
+        },
+        { 
+            word: "Misfeasance",
+            translation: "🇮🇹 Illecito civile",
+            example: [
+                { "ex1": "The company was sued for misfeasance in public office." }
+            ]
+        }
+    ]
+} 
 ]
 
 
