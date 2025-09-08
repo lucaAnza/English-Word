@@ -2165,7 +2165,100 @@ var daysData = [
             ]
         }
     ]
-} 
+    },
+    {
+    dayLabel: "Day 23",
+    words: [
+        {
+        word: "Pan",
+        translation: "🇮🇹 Padella",
+        example: [
+            { "ex1": "She fried the eggs in a non-stick pan." }
+        ]
+        },
+        {
+        word: "Keychain",
+        translation: "🇮🇹 Portachiavi",
+        example: [
+            { "ex1": "He keeps his house keys on a leather keychain." }
+        ]
+        },
+        {
+        word: "Wrist",
+        translation: "🇮🇹 Polso",
+        example: [
+            { "ex1": "She wore a silver bracelet around her wrist." }
+        ]
+        },
+        {
+        word: "Riddle",
+        translation: "🇮🇹 Indovinello <br> 🇮🇹 Fare molti buchi in qualcosa  ",
+        example: [
+            { "ex1": "Can you solve this tricky riddle before time runs out?" },
+            { "ex2" : "Scientists may have solved the riddle of Saturn's rings."},
+            { "ex3" : "The anti-aircraft guns riddled the plane's wings with bullets."}
+        ]
+        },
+        {
+        word: "Plentiful",
+        translation: "🇮🇹 Abbondante",
+        example: [
+            { "ex1": "Fresh fruits were plentiful at the market this morning." }
+        ]
+        },
+        {
+        word: "Clams",
+        translation: "🇮🇹 Vongole",
+        example: [
+            { "ex1": "We ordered spaghetti with clams at the seaside restaurant." }
+        ]
+        },
+        {
+        word: "Grace",
+        translation: "🇮🇹 Essere educati o la volontà di essere giusti <br> 🇮🇹 Grazia",
+        example: [
+            { "ex1": "She decided to grace the event with her presence." }
+        ]
+        },
+        {
+        word: "Chickpea",
+        translation: "🇮🇹 Ceci",
+        example: [
+            { "ex1": "Chickpeas are used to make hummus and falafel." }
+        ]
+        },
+        {
+        word: "Menace",
+        translation: "🇮🇹 Minaccia",
+        example: [
+            { "ex1": "Pollution is a growing menace to marine life." },
+            { "ex2" : "He spoke with a hint of menace."}
+        ]
+        },
+        {
+        word: "Tough",
+        translation: "🇮🇹 Duro <br> Severo 🇮🇹",
+        example: [
+            { "ex1": "The steak was too tough to chew." }
+        ]
+        },
+        {
+        word: "Pinch",
+        translation: "🇮🇹 Pizzico / Pizzicare",
+        example: [
+            { "ex1": "Add a pinch of salt to the soup." },
+            { "ex2": "Don’t pinch me, it hurts!" }
+        ]
+        },
+        {
+        word: "Down jacket",
+        translation: "🇮🇹 Piumino (giubbino)",
+        example: [
+            { "ex1": "He wore a thick down jacket during the ski trip." }
+        ]
+        }
+    ]
+    },
 ]
 
 
