@@ -856,7 +856,7 @@ var daysData = [
       },
       {
         "word": "Steam",
-        "translation": "(noun) Water vapor produced by heating. 🇮🇹 Vapore",
+        "translation": "🇮🇹 Vapore",
         "example": [
           { "ex1": "The steam from the tea fogged up my glasses." },
           { "ex2": "He used steam to remove the wallpaper." },

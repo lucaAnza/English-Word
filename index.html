@@ -747,11 +747,13 @@
     // Grab references to the deck container and toggle button
     const deckContainer = document.getElementById('random-deck-container');
     const toggleLanguageButton = document.getElementById('toggle-language-button');
+    const guessInput = document.getElementById('guess-input');
+    const checkButton = document.getElementById('check-button');
 
-    // Global variable to track the current language order.
-    // 'normal' means the card shows: front = word, back = translation.
-    // 'reversed' means: front = translation, back = word.
+    // Init context variable
     let languageOrder = 'normal';
+    guessInput.disabled = true;          // make input not writable
+    guessInput.placeholder = "🔒 Disabled";
 
     // Global variable for deck score and reference to the deck score element.
     let deckScore = 0;
@@ -851,12 +853,9 @@
 
     // (DECK GENERATION)
     function generateDeck() {
-      // Init of text_guess_input
-      const guessInput = document.getElementById('guess-input');
-      guessInput.disabled = true;          // make input not writable
-      guessInput.placeholder = "🔒 Disabled";
-
       deckContainer.innerHTML = ''; // Clear the current deck.
+
+      // Generation of the cards for the following deck
       for (let i = 0; i < 6; i++) {
         const card = createCard();
         // Add the fade-in class to trigger the animation
@@ -883,17 +882,6 @@
       // languageOrder = (languageOrder === 'normal') ? 'reversed' : 'normal';
       updateDeckCards();
     });
-
-    // Create the initial deck when the page loads.
-    generateDeck();
-
-    /* ================================================================================ */
-
-    /* ================================ Guess Input Logic ================================ */
-
-    // Cache the input and button elements
-    const guessInput = document.getElementById('guess-input');
-    const checkButton = document.getElementById('check-button');
 
     // Function to get the first active (unflipped) card
     function getActiveCard() {
@@ -946,6 +934,11 @@
     guessInput.addEventListener('keydown', (e) => {
       if (e.key === 'Enter') checkGuess();
     });
+
+    // Create the initial deck when the page loads.
+    generateDeck();
+    
+    /* ================================ Deck sections ================================ */
 
 
   </script>
