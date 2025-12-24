@@ -2258,7 +2258,188 @@ var daysData = [
         ]
         }
     ]
-    }
+    },
+    {
+    dayLabel: "Day 24",
+    words: [
+        {
+            word: "plenty",
+            translation: "🇮🇹 abbondanza",
+            example: [
+                { "ex1": "There was plenty of food for everyone at the party." }
+            ]
+        },
+        {
+            word: "spare",
+            translation: "🇮🇹 di riserva",
+            example: [
+                { "ex1": "Do you have a spare key just in case?" }
+            ]
+        },
+        {
+            word: "wouldn’t mind",
+            translation: "🇮🇹 non mi dispiacerebbe",
+            example: [
+                { "ex1": "I wouldn’t mind going out for dinner tonight." }
+            ]
+        },
+        {
+            word: "nasty",
+            translation: "🇮🇹 cattivo / sgradevole",
+            example: [
+                { "ex1": "He had a nasty attitude toward his coworkers." }
+            ]
+        },
+        {
+            word: "insight",
+            translation: "🇮🇹 intuizione",
+            example: [
+                { "ex1": "The book gives great insight into human behavior." }
+            ]
+        },
+        {
+            word: "outlook",
+            translation: "🇮🇹 prospettiva",
+            example: [
+                { "ex1": "She has a positive outlook on life." }
+            ]
+        },
+        {
+            word: "spoil",
+            translation: "🇮🇹 rovinare",
+            example: [
+                { "ex1": "Don’t spoil the surprise by telling her too early." }
+            ]
+        },
+        {
+            word: "ink",
+            translation: "🇮🇹 inchiostro",
+            example: [
+                { "ex1": "The printer ran out of ink." }
+            ]
+        },
+        {
+            word: "looking forward",
+            translation: "🇮🇹 non vedo l'ora di",
+            example: [
+                { "ex1": "I'm looking forward to our vacation." }
+            ]
+        },
+        {
+            word: "shirt",
+            translation: "🇮🇹 camicia",
+            example: [
+                { "ex1": "He wore a clean white shirt to the interview." },
+                { "ex2": "She ironed her shirt before going to work." }
+            ]
+        },
+        {
+            word: "soaked",
+            translation: "🇮🇹 completamente bagnato",
+            example: [
+                { "ex1": "We got soaked in the rain on the way home." }
+            ]
+        },
+        {
+            word: "eiderdown",
+            translation: "🇮🇹 piumino",
+            example: [
+                { "ex1": "The eiderdown kept us warm during the winter night." }
+            ]
+        }
+    ]
+    },
+    {
+    dayLabel: "Day 25",
+    words: [
+        {
+            word: "wink",
+            translation: "🇮🇹 fare l’occhiolino",
+            example: [
+                { "ex1": "She winked at me to show it was a joke." }
+            ]
+        },
+        {
+            word: "demanding",
+            translation: "🇮🇹 impegnativo",
+            example: [
+                { "ex1": "This job is demanding, but I’m learning a lot." }
+            ]
+        },
+        {
+            word: "anyone up?",
+            translation: "🇮🇹 c’è qualcuno sveglio? / qualcuno è disponibile?",
+            example: [
+                { "ex1": "It’s late, but anyone up for a quick call?" }
+            ]
+        },
+        {
+            word: "throw up",
+            translation: "🇮🇹 vomitare",
+            example: [
+                { "ex1": "He felt sick and had to throw up." }
+            ]
+        },
+        {
+            word: "puke",
+            translation: "🇮🇹 vomitare / vomito",
+            example: [
+                { "ex1": "He got carsick and puked on the side of the road." }
+            ]
+        },
+        {
+            word: "freight",
+            translation: "🇮🇹 merci (trasporto)",
+            example: [
+                { "ex1": "The freight arrived at the warehouse this morning." }
+            ]
+        },
+        {
+            word: "slippery",
+            translation: "🇮🇹 scivoloso",
+            example: [
+                { "ex1": "Be careful—the floor is slippery." }
+            ]
+        },
+        {
+            word: "radiator",
+            translation: "🇮🇹 termosifone",
+            example: [
+                { "ex1": "The radiator isn’t working, so the room is freezing." }
+            ]
+        },
+        {
+            word: "brag",
+            translation: "🇮🇹 vantarsi",
+            example: [
+                { "ex1": "He always brags about his new car." }
+            ]
+        },
+        {
+            word: "stakes",
+            translation: "🇮🇹 posta in gioco",
+            example: [
+                { "ex1": "The stakes are high, so we need to be careful." }
+            ]
+        },
+        {
+            word: "calf",
+            translation: "🇮🇹 polpaccio / vitello",
+            example: [
+                { "ex1": "I pulled a muscle in my calf while running." },
+                { "ex2": "The farmer took care of the calf all morning." }
+            ]
+        },
+        {
+            word: "sore",
+            translation: "🇮🇹 indolenzito / dolorante",
+            example: [
+                { "ex1": "My legs are sore after the long workout." },
+                { "ex2": "He woke up with a sore neck this morning." }
+            ]
+        }
+    ]
+    },
 ]
 
 
